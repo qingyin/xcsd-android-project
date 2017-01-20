@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <com.fortysevendeg.swipelistview.SwipeListView
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mailbox_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/none"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:background="@color/bg"
+            android:listSelector="@color/none"
+            android:scrollbars="@null"
+            swipe:swipeActionLeft="reveal"
+            swipe:swipeActionRight="reveal"
+            swipe:swipeAnimationTime="300"
+            swipe:swipeBackView="@+id/delete"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeFrontView="@+id/rl"
+            swipe:swipeMode="none"
+            swipe:swipeOffsetLeft="310dip"
+            swipe:swipeOffsetRight="200dip"
+            swipe:swipeOpenOnLongPress="false"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true" />
+
+        <RelativeLayout
+            android:id="@+id/mailbox_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/hmailbox_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/is_colour_bg" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hmailbox_icon"
+                android:gravity="center"
+                android:text="点击向园长反馈您的问题和建议"
+                android:textColor="@color/qzq_name"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

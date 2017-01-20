@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center" >
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        xmlns:xlist="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hey_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/none"
+        android:divider="@null"
+        android:background="@color/bg"
+        android:dividerHeight="0px"
+        android:listSelector="@color/none"
+        android:scrollbars="@null"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeAnimationTime="300"
+        swipe:swipeBackView="@+id/delete"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/rl"
+        swipe:swipeMode="none"
+        swipe:swipeOffsetLeft="310dip"
+        swipe:swipeOffsetRight="200dip"
+        swipe:swipeOpenOnLongPress="false"
+        xlist:enableLoad="true"
+        xlist:enableRefresh="true" />
+
+    <RelativeLayout
+        android:id="@+id/hey_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"
+        android:gravity="center" >
+
+        <ImageView
+                android:id="@+id/hey_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/is_colour_bg" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hey_icon"
+                android:gravity="center"
+                android:text="没有喂药信息"
+                android:textColor="@color/qzq_name"
+                android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

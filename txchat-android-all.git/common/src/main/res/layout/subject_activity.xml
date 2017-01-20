@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/subject_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/task_header_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/subject_back_img_layout"
+                android:layout_width="25dip"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/subject_back_img"
+                    android:layout_width="12dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_left_p" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/subject_back_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/subject_back_img_layout"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/text_parent"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/subject_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </RelativeLayout>
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/operate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dip"
+        android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/last_subject"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="7dip"
+            android:background="@color/edu_color_5"
+            android:text="@string/last_subject"
+        	android:textColor="@drawable/btn_white_txt_font"
+        	android:textSize="16dip" />
+        <Button 
+            android:id="@+id/next_subject"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dip"
+            android:background="@color/edu_color_5"
+            android:text="@string/next_subject"
+        	android:textColor="@drawable/btn_white_txt_font"
+        	android:textSize="16dip" />
+    </LinearLayout>
+    <!-- 
+    <Button
+        android:id="@+id/test_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dip"
+        android:background="@color/edu_color_5"
+        android:text="@string/submit"
+        android:textColor="@drawable/btn_white_txt_font"
+        android:textSize="16dip"
+        android:visibility="visible" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/operate_layout"
+        android:layout_below="@id/subject_header"
+        android:layout_margin="15dip"
+        android:paddingBottom="@dimen/dp_2"
+        android:background="@drawable/corner_white_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/subject_img"
+            android:layout_width="match_parent"
+            android:layout_height="12dip"
+            android:layout_margin="0.8dip" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/subject_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:lineSpacingMultiplier="1.6"
+                    android:text=""
+                    android:textColor="@color/edu_color_5"
+                    android:textSize="16dip" />
+
+                <RadioGroup
+                    android:id="@+id/subject_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical" >
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

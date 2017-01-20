@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/empty_top"
+        android:layout_width="match_parent"
+        android:layout_height="8dip"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/task_detail_propose_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/task_detail_propose_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/task_detail_propose_img"
+                android:layout_width="55dip"
+                android:layout_height="55dip"
+                android:src="@drawable/diray_def_pic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/task_detail_propose_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_toRightOf="@id/task_detail_propose_img_layout" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/task_detail_propose_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black5"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/task_detail_propose_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey13"
+                    android:textSize="14dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/task_detail_propose_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey5" />
+    </RelativeLayout>
+
+</LinearLayout>

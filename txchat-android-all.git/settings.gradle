@@ -1,0 +1,4 @@
+//include ':home', ':sdk', ':common', ':teacher', ':daogenerator'
+include ':home', ':sdk', ':common',':teacher'//, ':daogenerator'
+//include ':home', ':sdk', ':common'
+//include ':teacher', ':sdk', ':common'//,':daogenerator'

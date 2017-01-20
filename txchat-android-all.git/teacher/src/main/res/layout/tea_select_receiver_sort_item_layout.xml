@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:descendantFocusability="blocksDescendants">
+
+    <TextView
+            android:id="@+id/select_receiver_item_zimu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#E0E0E0"
+            android:paddingBottom="5dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="8dip"
+            android:text="A"
+            android:textColor="#454545"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dip">
+
+        <CheckBox
+                android:id="@+id/select_receiver_item_cb"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_alignParentLeft="true"
+                android:button="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/check_box"
+                android:focusable="false"/>
+
+        <com.tuxing.app.view.RoundImageView
+                android:id="@+id/select_receiver_item_icon"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_toRightOf="@+id/select_receiver_item_cb"
+                android:layout_centerVertical="true"
+                android:src="@drawable/default_avatar"/>
+
+
+        <TextView
+                android:id="@+id/select_receiver_item_name"
+                style="@style/text_setting_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/select_receiver_item_icon"
+                android:text="超超妈妈"/>
+    </RelativeLayout>
+
+</LinearLayout>

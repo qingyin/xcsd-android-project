@@ -1,0 +1,1 @@
+varying mediump vec2 v_texCoord;varying lowp vec4 v_color;uniform sampler2D CC_Texture0;uniform vec2 col1;uniform vec2 col2;void main() {	vec4 sourceColor = texture2D(CC_Texture0, v_texCoord);	gl_FragColor = vec4(  mix(vec3(0.004, 0.078, 0.267)  ,vec3(0.039,0.349, 0.69), sourceColor.x), 1.0);}		

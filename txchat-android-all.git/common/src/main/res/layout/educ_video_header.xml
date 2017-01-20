@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/rl_video_album_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_40"
+                android:clickable="true"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_gravity="center_vertical"
+        >
+
+            <TextView
+                    android:id="@+id/video_album_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/dp_14"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/qzq_comment_content"
+            />
+
+            <TextView
+                    android:id="@+id/video_type"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/video_album_name"
+                    android:paddingRight="@dimen/dp_2"
+                    android:paddingLeft="@dimen/dp_2"
+                    android:paddingBottom="@dimen/dp_1"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/dp_1"
+                    android:background="@drawable/educ_video_type_shape"
+            />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/qzq_zan_line"/>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_37"
+                android:clickable="true"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_gravity="center_vertical"
+        >
+
+            <TextView
+                    android:id="@+id/video_soure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/dp_14"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@+id/soure_info"
+                    android:textColor="@color/qzq_comment_content"
+            />
+
+
+            <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/show_more_img"/>
+
+            <TextView
+                    android:id="@+id/soure_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/dp_11"
+                    android:background="@drawable/item_bg_selector"
+                    android:textColor="@color/question_time"
+                    android:text="了解详情"
+            />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/login_bg"/>
+
+        <RelativeLayout
+                android:id="@+id/rl_video_info_list"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/educ_list_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/qzq_comment_content"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="资源列表"
+            />
+
+            <TextView
+                    android:id="@+id/educ_list_tv"
+                    android:layout_width="@dimen/dp_2"
+                    android:layout_height="@dimen/dp_13"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/login_text_blue"
+
+            />
+        </RelativeLayout>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_5"
+                android:background="@color/white"/>
+
+</LinearLayout>

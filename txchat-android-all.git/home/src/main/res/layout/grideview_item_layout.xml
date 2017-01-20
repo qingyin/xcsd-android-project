@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+     android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+       android:orientation="vertical"
+    >
+
+    <com.tuxing.app.view.RoundImageView
+        android:id="@+id/grid_item_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@drawable/defal_down_proress" />
+
+    <TextView
+        android:id="@+id/grid_item_name"
+        style="@style/text_setting_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/sp_14"
+        android:text="超超" />
+
+
+</LinearLayout>

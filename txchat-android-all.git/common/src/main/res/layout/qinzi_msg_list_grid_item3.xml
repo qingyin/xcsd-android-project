@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.tuxing.app.view.MyImageView
+        android:id="@+id/iv"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="left"
+        android:layout_centerVertical="true"
+        android:src="@drawable/defal_down_proress" >
+    </com.tuxing.app.view.MyImageView>
+
+    <LinearLayout
+            android:id="@+id/ll_status_btn"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@color/black"
+            android:alpha="0.6"
+           android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:gravity="center" >
+
+        <ImageView
+                android:id="@+id/chatting_status_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/video_download_btn_nor" />
+    </LinearLayout>
+
+</RelativeLayout>

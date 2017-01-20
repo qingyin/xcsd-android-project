@@ -1,0 +1,235 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : false,
+    "frameRate" : 60,
+    "noCache" : false,
+    "id" : "gameCanvas",
+    "renderMode" : 1,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d","extensions"],
+    
+    "jsList" : [
+        "src/loadResource.js",
+        "src/common/HttpHelper.js",
+        "src/common/NetManager.js",
+        "src/common/AlertTip.js",
+        "src/resource.js",
+        "src/util/util.js",
+        "src/util/utils.js",
+        "src/app.js",
+        "src/platformFun.js",
+        "src/enterSceneEnum.js",
+        "src/data/gameData.js",
+        "src/data/userData.js",
+        
+        "src/gameLobby/config_unit.js",
+        "src/gameLobby/controller.js",
+        "src/gameLobby/gameCell.js",
+        "src/gameLobby/view.js",
+
+        "src/interface/learnCS.js",
+        "src/interface/gameCS.js",
+
+        "src/gameConfig/dict_sg_element.js",
+        "src/gameConfig/dict_sg_level.js",
+        "src/gameConfig/dict_sg_level_round.js",
+        "src/gameDetail/schulteGrid/gameEnum.js",
+        "src/gameDetail/schulteGrid/view.js",
+        "src/gameDetail/schulteGrid/number.js",
+        "src/gameDetail/schulteGrid/controller.js",
+
+        "src/gameConfig/dict_pm_element.js",
+        "src/gameConfig/dict_pm_level.js",
+        "src/gameConfig/dict_pm_level_round.js",
+        "src/gameDetail/positionMemory/controller.js",
+        "src/gameDetail/positionMemory/coin.js",
+        "src/gameDetail/positionMemory/view.js",
+        "src/gameDetail/positionMemory/gameEnum.js",
+        "src/gameDetail/positionMemory/modle.js",
+        
+        "src/gameConfig/dict_cm_level.js",
+        "src/gameConfig/dict_cm_element.js",
+        "src/gameDetail/colorMachine/controller.js",
+        "src/gameDetail/colorMachine/view.js",
+        "src/gameDetail/managerGame.js",
+
+        "src/gameCommon/particleBubble.js",
+        "src/gameCommon/chooseLevel.js",
+        "src/gameCommon/chooseLevelCell.js",
+        "src/gameCommon/commonTopBack.js",
+        "src/gameCommon/commonTopPause.js",
+        "src/gameCommon/commonTopPauseProgress.js",
+        "src/gameCommon/startView.js",
+        "src/gameCommon/settleView.js",
+        "src/gameCommon/gameSetting.js",
+        "src/gameCommon/playerGuide.js",
+        "src/gameCommon/guideSettle.js",
+        "src/gameCommon/levelView/headCell.js",
+        "src/gameCommon/levelView/rankView.js",
+        "src/gameCommon/levelView/levelView.js",
+        "src/gameCommon/levelView/newChooseLevel.js",
+        "src/gameCommon/levelView/levelLockView.js",
+
+        "src/gameConfig/dict_nc_level.js",
+        "src/gameConfig/dict_nc_multiple.js",
+        "src/gameConfig/dict_nc_element.js",
+        "src/gameDetail/numberCrash/controller.js",
+        "src/gameDetail/numberCrash/number.js",
+        "src/gameDetail/numberCrash/view.js",
+        
+        "src/gameConfig/dict_sm_element.js",
+        "src/gameConfig/dict_sm_level.js",
+        "src/gameDetail/seabedMobilze/controller.js",
+        "src/gameDetail/seabedMobilze/fish.js",
+        "src/gameDetail/seabedMobilze/view.js",
+
+        
+        "src/gameConfig/dict_sp_graph.js",
+        "src/gameConfig/dict_sp_element.js",
+        "src/gameConfig/dict_sp_level.js",
+        "src/gameDetail/sevenPuzzle/controller.js",
+        "src/gameDetail/sevenPuzzle/graph.js",
+        "src/gameDetail/sevenPuzzle/view.js",
+
+        "src/gameConfig/dict_nw_element.js",
+        "src/gameConfig/dict_nw_level.js",
+        "src/gameConfig/dict_nw_level_round.js",
+        "src/gameDetail/newWords/gameEnum.js",
+        "src/gameDetail/newWords/cell.js",
+        "src/gameDetail/newWords/view.js",
+        "src/gameDetail/newWords/controller.js",
+
+        "src/gameConfig/dict_sc_element.js",
+        "src/gameConfig/dict_sc_level.js",
+        "src/gameConfig/dict_sc_level_round.js",
+        "src/gameDetail/stackChart/view.js",
+        "src/gameDetail/stackChart/controller.js",
+
+        "src/gameConfig/dict_sw_level.js",
+        "src/gameDetail/seabedWorld/controller.js",
+        "src/gameDetail/seabedWorld/fish.js",
+        "src/gameDetail/seabedWorld/view.js",
+
+        "src/gameConfig/dict_pp_element.js",
+        "src/gameConfig/dict_pp_level.js",
+        "src/gameConfig/dict_pp_level_round.js",
+        "src/gameDetail/paintedPath/cardModel.js",
+        "src/gameDetail/paintedPath/point.js",
+        "src/gameDetail/paintedPath/simCell.js",
+        "src/gameDetail/paintedPath/simPath.js",
+        "src/gameDetail/paintedPath/gridCell.js",
+        "src/gameDetail/paintedPath/view.js",
+        "src/gameDetail/paintedPath/controller.js",
+
+        "src/learnTest/spider_element.js",
+        "src/learnTest/startTestView.js",
+        "src/learnTest/startGameView.js",
+        "src/learnTest/settleTestView.js",
+        "src/learnTest/resultCoordinateCell.js",
+        "src/learnTest/settleTypeTop.js",
+        "src/learnTest/managerLearnTest.js",
+        "src/learnTest/testTipView.js",
+        "src/learnTest/questionExplainView.js",
+        "src/learnTest/testGradeCell.js",
+
+        "src/learnTask/subViewProgress.js",
+        "src/learnTask/cellViewTask.js",
+        "src/learnTask/subViewTop.js",
+        "src/learnTask/viewLeaveTip.js",
+        "src/learnTask/viewResult.js",
+        "src/learnTask/viewSettle.js",
+        "src/learnTask/viewStartting.js",
+        "src/learnTask/viewTaskDetails.js",
+        "src/learnTask/managerLearnTask.js",
+
+        "src/testConfig/first_test_pm_level.js",
+        "src/testConfig/first_test_pm_level_round.js",
+        "src/testConfig/first_test_sg_level.js",
+        "src/testConfig/first_test_sg_level_round.js",
+        "src/testConfig/first_test_nw_level.js",
+        "src/testConfig/first_test_nw_level_round.js",
+        "src/testConfig/first_test_sp_level.js",
+        "src/testConfig/first_test_cm_level.js",
+        "src/testConfig/first_test_nc_level.js",
+
+        "src/testConfig/test_cm_level.js",
+        "src/testConfig/test_sm_level.js",
+        "src/testConfig/test_nw_level.js",
+        "src/testConfig/test_nw_level_round.js",
+        "src/testConfig/test_nc_level.js",
+        "src/testConfig/test_pm_level.js",
+        "src/testConfig/test_pm_level_round.js",
+        "src/testConfig/test_sg_level.js",
+        "src/testConfig/test_sg_level_round.js",
+        "src/testConfig/test_sp_level.js"
+
+
+        ,"src/koiGame/Config/appConfig.js"
+
+        ,"src/koiGame/Utility/ArrayEx.js"
+        ,"src/koiGame/Utility/lumosity.js"
+        ,"src/koiGame/Utility/GameGlobals.js"
+        ,"src/koiGame/Utility/LumosityLogger.js"
+        ,"src/koiGame/Utility/LumosityMath.js"
+        ,"src/koiGame/Utility/LumosityUtils.js"
+        ,"src/koiGame/Utility/Platform.js"
+        
+        ,"src/koiGame/Animation/AnimationChanges.js"
+        ,"src/koiGame/Animation/LayoutLoader.js"
+
+        ,"src/koiGame/ViewUtils/LumositySprite.js"
+        ,"src/koiGame/ViewUtils/ActionEx.js"
+
+        ,"src/koiGame/Entity/AnimatedEntity.js"
+        ,"src/koiGame/Entity/AnimatedEntityView.js"
+
+        ,"src/koiGame/BaseView/baseBG.js"
+        ,"src/koiGame/BaseView/baseView.js"
+
+        ,"src/koiGame/KoiGame/CustomEvent/CustomEvent.js"   
+
+        ,"src/koiGame/KoiGame/Widget/gameMenuWidget.js"
+        ,"src/koiGame/KoiGame/Widget/gameOpenTipWidget.js" 
+        ,"src/koiGame/KoiGame/Widget/gameLevelWidget.js" 
+        
+
+        ,"src/koiGame/KoiGame/Animated/BottomFeederAnimatedView.js"
+        ,"src/koiGame/KoiGame/Animated/DragonflyAnimatedView.js"
+        ,"src/koiGame/KoiGame/Animated/FireflyAnimatedView.js"
+        ,"src/koiGame/KoiGame/Animated/RaindropAnimatedView.js"
+        ,"src/koiGame/KoiGame/Animated/DistractorView.js"
+
+        ,"src/koiGame/KoiGame/Pond/PondConstants.js"
+        ,"src/koiGame/KoiGame/Pond/PondModel.js"
+        ,"src/koiGame/KoiGame/Pond/PondView.js"
+        ,"src/koiGame/KoiGame/Pond/GuideController.js"
+        ,"src/koiGame/KoiGame/Pond/PondController.js"
+
+        ,"src/koiGame/KoiGame/Food/FoodConstants.js"
+        ,"src/koiGame/KoiGame/Food/FoodSettings.js"
+        ,"src/koiGame/KoiGame/Food/FoodModel.js"
+        ,"src/koiGame/KoiGame/Food/FoodAnimatedView.js"
+        ,"src/koiGame/KoiGame/Food/FoodView.js"
+        ,"src/koiGame/KoiGame/Food/FoodController.js"
+
+        ,"src/koiGame/KoiGame/Koi/KoiConstants.js"
+        ,"src/koiGame/KoiGame/Koi/KoiModel.js"
+        ,"src/koiGame/KoiGame/Koi/KoiAnimatedView.js"
+        ,"src/koiGame/KoiGame/Koi/KoiView.js"
+        ,"src/koiGame/KoiGame/Koi/KoiController.js"
+
+        ,"src/koiGame/KoiGame/PlayingKoi/PlayingKoiConstants.js"
+        ,"src/koiGame/KoiGame/PlayingKoi/PlayingKoiSettings.js"
+        ,"src/koiGame/KoiGame/PlayingKoi/PlayingKoiLevelSettings.js"
+        ,"src/koiGame/KoiGame/PlayingKoi/PlayingKoiModel.js"
+        ,"src/koiGame/KoiGame/PlayingKoi/PlayingKoiView.js"
+        ,"src/koiGame/KoiGame/PlayingKoi/PlayingKoiController.js"
+
+        ,"src/koiGame/launcher.js"
+    ]
+}
+
+

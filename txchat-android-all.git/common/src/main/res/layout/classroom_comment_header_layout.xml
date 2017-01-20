@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingLeft="@dimen/dp_10"
+              android:paddingBottom="@dimen/dp_13"
+>
+
+
+    <TextView
+            android:id="@+id/classroom_comment_header_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingTop="@dimen/dp_18"
+            android:text="评价该课程"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"/>
+
+    <LinearLayout
+            android:id="@+id/comment_xing_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dp_9"
+    >
+        <ImageView
+                android:id="@+id/user_comment_xing_1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:visibility="visible"
+                android:src="@drawable/xing_l_selector"
+
+        />
+        <ImageView
+                android:id="@+id/user_comment_xing_2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:visibility="visible"
+                android:src="@drawable/xing_l_selector"
+
+        />
+        <ImageView
+                android:id="@+id/user_comment_xing_3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:visibility="visible"
+                android:src="@drawable/xing_l_selector"
+
+        />
+        <ImageView
+                android:id="@+id/user_comment_xing_4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:visibility="visible"
+                android:src="@drawable/xing_l_selector"
+
+        />
+
+        <ImageView
+                android:id="@+id/user_comment_xing_5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:visibility="visible"
+                android:src="@drawable/xing_l_selector"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_18"
+            android:gravity="center"
+            android:background="@color/qzq_comment_bg"
+            android:orientation="horizontal"
+
+    >
+        <TextView
+                android:id="@+id/classroom_comment_header_score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+        <LinearLayout
+                android:id="@+id/classroom_comment_header_xing_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/classroom_comment_header_score"
+        >
+            <ImageView
+                    android:id="@+id/score_xing_1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_s_selector"
+
+            />
+            <ImageView
+                    android:id="@+id/score_xing_2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_s_selector"
+
+            />
+            <ImageView
+                    android:id="@+id/score_xing_3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_s_selector"
+
+            />
+            <ImageView
+                    android:id="@+id/score_xing_4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_s_selector"
+
+            />
+
+            <ImageView
+                    android:id="@+id/score_xing_5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_s_selector"
+            />
+
+        </LinearLayout>
+
+
+
+        <TextView
+                android:id="@+id/classroom_comment_header_comment"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textColor="@color/calendar_color_gray"
+                android:textSize="@dimen/sp_11"/>
+    </LinearLayout>
+
+
+</LinearLayout>

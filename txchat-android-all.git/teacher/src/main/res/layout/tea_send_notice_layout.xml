@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+
+
+        <com.fortysevendeg.swipelistview.SwipeListView
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/send_notice_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/none"
+            android:layout_marginTop="15dp"
+             android:divider="@null"
+            android:scrollbars="none"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/none"
+            swipe:swipeActionLeft="reveal"
+            swipe:swipeAnimationTime="300"
+            swipe:swipeBackView="@+id/delete"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeFrontView="@+id/notice_rl"
+            swipe:swipeMode="left"
+            swipe:swipeOffsetLeft="310dip"
+            swipe:swipeOffsetRight="200dip"
+            swipe:swipeOpenOnLongPress="false"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true" />
+
+</LinearLayout>

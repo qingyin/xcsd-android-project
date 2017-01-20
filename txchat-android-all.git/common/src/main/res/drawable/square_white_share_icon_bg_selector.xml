@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle"
+               android:useLevel="false">
+            <corners android:radius="@dimen/dp_14"/>
+            <padding android:left="@dimen/dp_2"
+                     android:top="@dimen/dp_2"
+                     android:right="@dimen/dp_2"
+                     android:bottom="@dimen/dp_2"/>
+            <solid android:color="#d3d3d3"/>
+            <size android:width="@dimen/dp_60"
+                  android:height="@dimen/dp_60"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle"
+               android:useLevel="false">
+            <corners android:radius="@dimen/dp_14"/>
+            <padding android:left="@dimen/dp_2"
+                     android:top="@dimen/dp_2"
+                     android:right="@dimen/dp_2"
+                     android:bottom="@dimen/dp_2"/>
+            <!-- solid 填充的颜色  -->
+            <solid android:color="@color/white"/>
+            <stroke android:width="@dimen/dp_1"
+                    android:color="@android:color/white"/>
+            <size android:width="@dimen/dp_60"
+                  android:height="@dimen/dp_60"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sc_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_allview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/viewPagerRl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.picCarousel.AutoScrollViewPager
+                        android:id="@+id/scroll_pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <!--<com.tuxing.app.view.ArcView-->
+                    <!--android:id="@+id/arc"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_alignParentBottom="true" />-->
+
+                    <!--<com.picCarousel.CirclePageIndicator-->
+                    <!--xmlns:CirclePageIndicator="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:id="@+id/indicator"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:padding="0dp"-->
+                    <!--CirclePageIndicator:fillColor="@color/page_indicator_color"-->
+                    <!--CirclePageIndicator:pageColor="?attr/baseColorValue"-->
+                    <!--CirclePageIndicator:strokeWidth="0dp"-->
+                    <!--/>-->
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/bg" />
+
+            <com.tuxing.app.view.MyGridView
+                android:id="@+id/home_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:paddingTop="10dp"
+                android:verticalSpacing="10dp" />
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

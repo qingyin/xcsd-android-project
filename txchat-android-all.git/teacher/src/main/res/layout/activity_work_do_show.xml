@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dp_6"
+    tools:context="com.xcsd.app.parent.activity.HomeWorkDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/btnTitleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_title_right_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/btn_back"
+                android:textColor="@color/text_teacher"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/sp_14"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_back_title_t"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="学能作业成绩"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title_right_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="布置"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_teacher"
+            android:textSize="@dimen/dp_14"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_error_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/error_item_color"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:id="@+id/iv_neterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_error_icon"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_connect_errormsg"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的网络不给力，请检查一下网络"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_neterror"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/rlTitle"
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:background="@color/gray_line"
+        android:layout_height="@dimen/dp_42">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本次作业成绩："
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_score_number"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_toRightOf="@+id/tv_left"
+            android:text="8分"
+            android:textColor="@color/skin_text1"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_right_tips"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="作业满分为10分"
+            android:textColor="@color/edu_color_5"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        xmlns:xlist="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_work_list_dateils"
+        android:background="@color/bg"
+        android:layout_below="@+id/rl_first"
+        android:cacheColorHint="@color/none"
+        android:listSelector="@color/none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:scrollbars="@null"
+        android:dividerHeight="0px"
+        swipe:swipeFrontView="@+id/rl"
+        swipe:swipeBackView="@+id/delete"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeMode="none"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeOpenOnLongPress="false"
+        swipe:swipeAnimationTime="300"
+        swipe:swipeOffsetLeft="310dip"
+        swipe:swipeOffsetRight="200dip"
+        xlist:enableRefresh = "true"
+        xlist:enableLoad = "true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/activity_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/hey_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_colour_bg" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hey_icon"
+            android:gravity="center"
+            android:text="暂无信息"
+            android:textColor="@color/yws_black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

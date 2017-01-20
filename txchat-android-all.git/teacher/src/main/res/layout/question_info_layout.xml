@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/rl_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+
+            <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/btn_back"
+                    android:background="@drawable/btn_title_right_selector"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_teacher"
+                    android:textSize="@dimen/sp_14"
+                    android:drawableLeft="@drawable/ic_back_title_t"/>
+
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxEms="10"
+        />
+
+        <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/comment_count_bg"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_9"
+                android:layout_marginRight="@dimen/dp_14"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="999人回答"
+                android:textSize="@dimen/dp_12"
+               />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_ques_info_ask"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@drawable/teacher_help_press_selector">
+        <View
+                android:id="@+id/view_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:background="@color/qzq_gray"
+        >
+
+        </View>
+        <TextView
+                android:layout_below="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/expert_detail_text"
+                android:drawableLeft="@drawable/ask_icon"
+                android:drawablePadding="5dp"
+                android:textSize="@dimen/sp_15"
+                android:text="我来回答"
+                />
+
+    </RelativeLayout>
+
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question_info_ask_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/none"
+            android:divider="@null"
+            android:layout_above="@+id/rl_ques_info_ask"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_5"
+            android:dividerHeight="0px"
+            android:listSelector="@drawable/item_message_bg"
+            android:layout_below="@+id/rl_title_bar"
+           android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true"/>
+
+
+
+</RelativeLayout>

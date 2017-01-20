@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/classroom_view"
+              android:paddingBottom="@dimen/dp_10"
+                android:orientation="vertical">
+
+    <RelativeLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  >
+        <ImageView
+                android:id="@+id/classrooom_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_150"
+                android:src="@drawable/banner_bg"
+                android:scaleType="centerCrop"
+                />
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/classroom_title_bg"
+        />
+        <ImageView
+                android:id="@+id/classrooom_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/classroom_play_icon"
+                android:layout_marginLeft="@dimen/dp_9"
+                android:layout_marginTop="@dimen/dp_12"
+                android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+           android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:src="@drawable/default_avatar"/>
+
+
+        <TextView
+                android:id="@+id/classroom_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp_12"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/head_icon"
+                android:text="这里是课程的标题只显示一行这里是课程的标题只显示一行这里是课程的标题只显示一行"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"/>
+
+        <TextView
+                android:id="@+id/classroom_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head_icon"
+                android:text="时长: 120分钟"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/classroom_view1"
+        />
+
+        <TextView
+                android:id="@+id/classroom_austor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_12"
+                android:layout_toLeftOf="@id/classroom_time"
+                android:layout_alignBottom="@id/head_icon"
+                android:layout_toRightOf="@id/head_icon"
+                android:paddingRight="@dimen/dp_10"
+                android:text="莫言"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/classroom_view1"
+        />
+    </RelativeLayout>
+</LinearLayout>

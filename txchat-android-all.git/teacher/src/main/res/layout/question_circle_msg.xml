@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/qzq_gray"
+              android:orientation="vertical">
+
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/none"
+            android:divider="@null"
+            android:background="@color/bg"
+            android:layout_marginTop="@dimen/dp_5"
+            android:dividerHeight="0px"
+            android:listSelector="@color/none"
+            android:scrollbars="none"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true"/>
+
+</LinearLayout>
+
+

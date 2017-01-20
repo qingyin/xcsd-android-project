@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="@null">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                <EditText
+                        android:id="@+id/et_mailbox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="@string/school_suggest"
+                        android:minHeight="120dp"
+                        android:maxLength="200"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                        android:id="@+id/tv_totle_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/et_mailbox"
+                        android:text="/200"
+                        android:textColor="@color/text_gray"/>
+
+                <TextView
+                        android:id="@+id/mailbox_surplus_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/et_mailbox"
+                        android:layout_toLeftOf="@id/tv_totle_num"
+                        android:text="0"
+                        android:textColor="@color/text_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/maibox_niming"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="visible">
+
+                <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16"
+                        android:text="@string/niming_fankui"/>
+
+                <ToggleButton
+                        android:id="@+id/mailbox_niming_button"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@null"
+                        android:background="@drawable/ios7_btn"
+                        android:checked="false"
+                        android:textOff=""
+                        android:textOn=""/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

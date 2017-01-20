@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/rl_son_circle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                        android:id="@+id/fx_qzq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:src="@drawable/fx_qzq_icon" />
+
+                <TextView
+                        android:id="@+id/fx_tv_qzq"
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fx_qzq"
+                        android:text="@string/son_circle" />
+
+                <ImageView
+                        android:id="@+id/iv_qzq_HintNum"
+                        android:layout_width="@dimen/dp_8"
+                        android:layout_height="@dimen/dp_8"
+                        android:layout_toRightOf="@id/fx_tv_qzq"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:src="@drawable/unread_count_bg"
+                        android:visibility="gone" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_wxy"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                        android:id="@+id/fx_wxy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:src="@drawable/fx_wxy_icon" />
+
+                <TextView
+                        android:id="@+id/fx_tv_wxy"
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fx_wxy"
+                        android:text="@string/school_home" />
+
+                <ImageView
+                        android:id="@+id/iv_wxy_HintNum"
+                        android:layout_width="@dimen/dp_8"
+                        android:layout_height="@dimen/dp_8"
+                        android:layout_toRightOf="@id/fx_tv_wxy"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:src="@drawable/unread_count_bg"
+                        android:visibility="gone" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+                android:id="@+id/rl_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:paddingRight="10dp" >
+                <ImageView
+                        android:id="@+id/fx_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:src="@drawable/fx_activity_icon" />
+
+                <TextView
+                        android:id="@+id/fx_tv_activity"
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fx_activity"
+                        android:text="@string/find_activity" />
+
+                <ImageView
+                        android:id="@+id/iv_activity_HintNum"
+                        android:layout_width="@dimen/dp_8"
+                        android:layout_height="@dimen/dp_8"
+                        android:layout_toRightOf="@id/fx_tv_activity"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:src="@drawable/unread_count_bg"
+                        android:visibility="gone" />
+
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_integral_shop"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                        android:id="@+id/fx_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:src="@drawable/fx_integral_icon" />
+
+                <TextView
+                        android:id="@+id/fx_tv_integral"
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fx_integral"
+                        android:text="@string/integral_shop" />
+
+                <ImageView
+                        android:id="@+id/iv_integral_HintNum"
+                        android:layout_width="@dimen/dp_8"
+                        android:layout_height="@dimen/dp_8"
+                        android:layout_toRightOf="@id/fx_tv_integral"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:src="@drawable/unread_count_bg"
+                        android:visibility="gone" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+        </RelativeLayout>
+
+
+</LinearLayout>

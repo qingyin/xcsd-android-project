@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+    <include
+            android:id="@+id/base_titlebar"
+            layout="@layout/expert_qa_title_layout"></include>
+
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expert_list"
+            android:background="@color/bg"
+            android:cacheColorHint="@color/none"
+            android:listSelector="@color/none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/base_titlebar"
+            android:scrollbars="none"
+            android:dividerHeight="@dimen/dp_8"
+            xlist:enableRefresh="true"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            xlist:enableLoad="true"
+            android:divider="@color/bg"
+            />
+
+</RelativeLayout>

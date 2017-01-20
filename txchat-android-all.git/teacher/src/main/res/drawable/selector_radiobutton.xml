@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:left="-2dp" android:right="-2dp" android:top="-2dp">
+                <shape>
+                    <stroke android:width="2dp" android:color="@color/skin_text1"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="-2dp" android:right="-2dp" android:top="-2dp">
+                <shape>
+                    <stroke android:width="2dp" android:color="@color/bg"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

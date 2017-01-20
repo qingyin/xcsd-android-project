@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="8dip" 
+    android:paddingRight="8dip">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dip"
+         android:layout_centerVertical="true"
+        android:src="@drawable/arrow_gray" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/arrow"
+        android:orientation="horizontal"
+         android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/image" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dip"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dip"
+            android:textSize="@dimen/main_item_text_size" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

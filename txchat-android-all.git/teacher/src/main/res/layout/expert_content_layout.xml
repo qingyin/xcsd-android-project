@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/xListView"
+            android:background="@color/bg"
+            android:cacheColorHint="@color/none"
+            android:listSelector="@color/none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            xlist:enableRefresh="true"
+            xlist:enableLoad="true"
+            android:divider="@color/bg"
+            android:dividerHeight="@dimen/dp_1"/>
+</LinearLayout>

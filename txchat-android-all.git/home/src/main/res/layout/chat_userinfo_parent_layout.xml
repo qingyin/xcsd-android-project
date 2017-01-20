@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:background="@drawable/my_profile_bg"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+            <com.tuxing.app.view.RoundImageView
+                    android:id="@+id/userinfo_parent_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/default_info_image"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_bb_sex"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:visibility="gone">
+
+            <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="宝宝性别"/>
+
+            <TextView
+                    android:id="@+id/userinfo_parent_sex"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                      android:gravity="center_vertical|right"
+                    android:lines="2"
+                    />
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/bg"/>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <TextView
+                    android:id="@+id/userinfo_class_tv"
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/user_class"/>
+
+            <TextView
+                    android:id="@+id/userinfo_parent_class"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:lines="2"
+                    />
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/bg"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <TextView
+                    android:id="@+id/userinfo_school_tv"
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/user_school"/>
+
+            <TextView
+                    android:id="@+id/userinfo_parent_school"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:lines="2"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/bottom_parent_send_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@drawable/btn_bottom_red_bg_selector"
+            android:clickable="true"
+            >
+
+        <TextView
+                android:id="@+id/tv_send_msg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_message"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_send_msg"
+                android:text="@string/btn_send_msg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_16"/>
+    </RelativeLayout>
+
+</RelativeLayout>

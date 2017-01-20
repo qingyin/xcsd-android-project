@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:src="@drawable/question_normal_icon"
+        android:layout_centerHorizontal="true"
+        android:padding="1dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:text="首页"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textColor="@drawable/tea_main_text_selector"
+        android:textSize="12sp"
+        android:padding="1dp">
+    </TextView>
+    <!--<TextView-->
+    <!--android:id="@+id/tab_item_unread_num"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignRight="@+id/iv_tab_img"-->
+    <!--android:background="@drawable/notice_unread_icon"-->
+    <!--android:visibility="gone"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginRight="-15dp"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="1sp"/>-->
+
+    <ImageView
+            android:id="@+id/tab_item_isnew"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignTop="@+id/imageview"
+            android:layout_marginLeft="-7dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/imageview"
+            android:src="@drawable/unread_count_bg"/>
+
+</RelativeLayout>

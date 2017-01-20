@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:src="@drawable/default_face" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_userid"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_2"
+                android:autoLink="web"
+                android:background="@drawable/chatfrom_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center|left"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="185dp"
+                android:minHeight="38dp"
+                android:minWidth="50dp"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_share_sent"
+                android:layout_toRightOf="@id/iv_userhead"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_width="204.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatfrom_bg"
+                android:gravity="center|left"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chatcontent1"
+                    style="@style/chat_content_date_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:background="@null"
+                    android:autoLink="web"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLines="12"
+                    android:maxWidth="200.0dip"
+                    android:minHeight="38dp"
+                    android:minWidth="50dp"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_6"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="沙发发生的范德萨"
+                    />
+
+                <com.tuxing.app.view.MyImageView
+                    android:id="@+id/iv_send_pic"
+                    android:layout_below="@+id/tv_chatcontent1"
+                    android:layout_width="200dip"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_image"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

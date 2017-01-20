@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip"
+    android:background="@color/black_light1"
+    android:alpha="0.5"
+    android:gravity="center"
+    >
+
+
+    <ImageView 
+        android:id="@+id/net_eroy_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        
+        />
+        <TextView
+            android:id="@+id/network_erroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/net_eroy_icon"
+            android:text="您的网络不给力，请检查一下网络"
+            android:padding="5dip"
+            
+             />
+
+
+</RelativeLayout>

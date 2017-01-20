@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+    <WebView
+        android:id="@+id/recipe_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        />
+    
+            <TextView
+            android:id="@+id/recipe_webview_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#8d8e90"
+            android:textSize="18sp"
+            android:text="加载失败，点击屏幕刷新"
+            android:visibility="visible"/>
+</LinearLayout>

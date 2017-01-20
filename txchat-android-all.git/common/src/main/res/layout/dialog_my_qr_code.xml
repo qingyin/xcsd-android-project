@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:background="@drawable/shape_pop_top"
+            android:orientation="vertical"
+            android:paddingLeft="28dp">
+
+        <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="@dimen/dp_10"
+                android:text="小朋友"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="小朋友爸爸"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/shape_pop_bottom"
+            android:contentDescription="@null"/>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"  android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+               >
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入内容"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_demand"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_msg"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:minHeight="120dp"
+                    android:maxLength="500"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/sp_14"
+                    android:hint="输入内容..."
+                    android:textColorHint="@color/login_account_color"/>
+
+                <TextView
+                    android:id="@+id/tv_totle_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_demand"
+                    android:layout_below="@id/et_demand"
+                    android:text="/500"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/hey_surplus_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_demand"
+                    android:layout_toLeftOf="@id/tv_totle_num"
+                    android:text="0"
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/rl_visible_dept"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    >
+
+                <TextView
+                        android:id="@+id/tv_visible_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可见人员"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14"/>
+                
+                
+                <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/arrow_gray"
+                        android:paddingLeft="5dp"
+                        android:visibility="visible"/>
+
+                <TextView
+                        android:id="@+id/tv_visible_dept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"
+                        android:layout_toLeftOf="@id/iv_arrow"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_14"
+                       />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/rl_class_picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否同步到班级相册" />
+
+                <ToggleButton
+                        android:id="@+id/tb_class_picture_button"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@null"
+                        android:background="@drawable/ios7_btn_blue"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn="" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/rl_sysnc_growup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="@dimen/dp_10"
+                   android:background="@color/white"
+                    android:visibility="gone">
+
+                <CheckBox
+                        android:id="@+id/sysc_growup_btn"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/growup_select"
+                        android:button="@null"
+                        android:focusable="false"/>
+
+                <TextView
+                        style="@style/text_setting_black"
+                        android:layout_toRightOf="@+id/sysc_growup_btn"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="同步到成长时光" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/bg"
+                    android:padding="10dp" >
+
+                <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加图片"
+                        android:textColor="@color/qzq_name"
+                        android:textSize="@dimen/sp_14" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tv"
+                        android:text="(最多可添加20张图片)"
+                        android:textColor="@color/qzq_name"
+                        android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+            <com.tuxing.app.view.MyGridView
+                    android:id="@+id/demand_icon_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:verticalSpacing="3dp"
+            />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

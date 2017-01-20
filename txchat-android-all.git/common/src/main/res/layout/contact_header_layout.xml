@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_tab_bg"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_contact_teacher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+        <com.tuxing.app.view.RoundImageView
+                android:id="@+id/contact_item_icon_1"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_garden_contact"/>
+
+        <TextView
+                android:id="@+id/contact_item_name_1"
+                style="@style/text_setting_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/contact_item_icon_1"
+                android:text="学校通讯录"/>
+    </RelativeLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/bg"/>
+    <RelativeLayout
+            android:id="@+id/rl_contact_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+        <com.tuxing.app.view.RoundImageView
+                android:id="@+id/contact_item_icon_2"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_class_contact"/>
+
+        <TextView
+                android:id="@+id/contact_item_name_2"
+                style="@style/text_setting_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/contact_item_icon_2"
+                android:text="家长通讯录"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_3"
+            android:background="@color/bg"/>
+</LinearLayout>
+

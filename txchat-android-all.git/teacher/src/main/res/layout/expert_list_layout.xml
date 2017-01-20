@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/expert_ll"
+    >
+
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+        >
+
+            <TextView
+                    android:id="@+id/expert_list_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/expert_item_text"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+            />
+
+            <TextView
+                    android:id="@+id/expert_list_item_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_below="@+id/expert_list_item_name"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_11"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/expert_item_text"
+                    android:textSize="@dimen/sp_15"
+            />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+        >
+            <ImageView
+                    android:id="@+id/expert_list_item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/expert_avatar"
+                    android:scaleType="centerCrop"
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/bottom_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_8"
+            android:background="@color/bg"
+            android:visibility="gone"
+    />
+
+
+</LinearLayout>

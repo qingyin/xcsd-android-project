@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:layout_gravity="center"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RelativeLayout
+            android:id="@+id/rl_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/qzq_title_black">
+
+        <TextView
+                android:id="@+id/tv_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="2dp"
+                android:background="@null"
+                android:text="取消"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+        />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxEms="10"
+        />
+
+        <Button
+                android:id="@+id/tv_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/qzq_title_black"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:text="导入"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_14"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+         android:id="@+id/rl_video"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/rl_title_bar"
+          android:gravity="center"
+         >  
+    <VideoView
+            android:id="@+id/playView"
+            android:layout_below="@id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            />
+
+      <RelativeLayout 
+         android:id="@+id/rl_pause"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+          android:visibility="gone"
+         >
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/qzq_title_black"
+              android:alpha="0.4"
+              />
+    <ImageView 
+        android:id="@+id/iv_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/select_video_pause"
+        />
+     </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.tuxing.app.qzq.view.MyRecyclerView
+            android:id="@+id/horlist"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" 
+            android:layout_below="@id/rl_video"
+            android:layout_marginTop="63dp"
+            />
+
+     <TextView 
+         android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            
+            />
+     
+
+</RelativeLayout>

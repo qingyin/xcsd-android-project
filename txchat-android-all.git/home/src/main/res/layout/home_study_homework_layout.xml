@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_home_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_back"
+                android:gravity="center_vertical|left"
+                android:text="返回"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_home_title"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_home_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.fortysevendeg.swipelistview.SwipeListView xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/swip_home_study_homework"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="@color/none"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@color/none"
+            android:scrollbars="@null"
+            swipe:swipeActionLeft="reveal"
+            swipe:swipeActionRight="reveal"
+            swipe:swipeAnimationTime="300"
+            swipe:swipeBackView="@+id/delete"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeFrontView="@+id/rl"
+            swipe:swipeMode="none"
+            swipe:swipeOffsetLeft="310dip"
+            swipe:swipeOffsetRight="200dip"
+            swipe:swipeOpenOnLongPress="false"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true" />
+
+
+        <ImageView
+            android:id="@+id/qzq_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_100"
+            android:src="@drawable/no_colour_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nodata_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/logo_nomsg"
+            android:gravity="center"
+            android:text="没有数据!"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp_15"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/hey_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_colour_bg" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hey_icon"
+            android:gravity="center"
+            android:text="暂无信息"
+            android:textColor="@color/yws_black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+</LinearLayout>

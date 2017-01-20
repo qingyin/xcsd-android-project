@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tab_label"
+        style="?android:attr/tabWidgetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="收件箱"
+        android:textColor="@color/skin_text1"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:id="@+id/notice_right_line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tab_label"
+        android:layout_alignTop="@id/tab_label"
+        android:layout_toRightOf="@id/tab_label"
+        android:background="@color/bg"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/notice_left_line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tab_label"
+        android:layout_alignTop="@id/tab_label"
+        android:layout_toLeftOf="@id/tab_label"
+        android:background="@color/bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/rl_change_color"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_show"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/sorrt_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_name"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/sorrt_icon"
+            android:textSize="@dimen/sp_16"
+            android:text="位置记忆" />
+
+        <TextView
+            android:id="@+id/sorrt_item_work"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/sorrt_icon"
+            android:layout_alignParentBottom="true"
+            android:text="专注力"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_14"
+            />
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_time"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_94"
+            android:layout_toRightOf="@+id/sorrt_icon"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"
+            android:text="第三关" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/sorrt_item_done"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_12"
+            android:text="未过关" />
+
+        <TextView
+            android:id="@+id/sorrt_item_done_level"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_14"
+            android:maxEms="9"
+            android:drawableRight="@drawable/arrow_gray"
+            android:text="无" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/xing_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_18"
+            >
+            <ImageView
+                android:id="@+id/comment_dialog_xing_1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:visibility="visible"
+                android:src="@drawable/game_star_big_02"
+                />
+            <ImageView
+                android:id="@+id/comment_dialog_xing_2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="visible"
+                android:src="@drawable/game_star_big_02"
+                />
+            <ImageView
+                android:id="@+id/comment_dialog_xing_3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="visible"
+                android:src="@drawable/game_star_big_02"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/btn_status_tx"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/sorrt_icon_one"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_name_one"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/sorrt_icon_one"
+            android:textSize="@dimen/sp_16"
+            android:text="位置记忆" />
+
+        <TextView
+            android:id="@+id/sorrt_item_work_one"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/sorrt_icon_one"
+            android:layout_alignParentBottom="true"
+            android:text="专注力"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_14"
+            />
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_time_one"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_94"
+            android:layout_toRightOf="@+id/sorrt_icon_one"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"
+            android:text="第三关" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/sorrt_item_done_one"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_12"
+            android:text="未过关" />
+
+        <TextView
+            android:id="@+id/sorrt_item_done_level_one"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_14"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:textColor="@color/skin_text1"
+            android:drawableRight="@drawable/arrow_gray"
+            android:text="无" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/xing_ll_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_18"
+            >
+            <ImageView
+                android:id="@+id/comment_dialog_xing_1_one"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:visibility="visible"
+                android:src="@drawable/game_star_big_02"
+                />
+            <ImageView
+                android:id="@+id/comment_dialog_xing_2_one"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="visible"
+                android:src="@drawable/game_star_big_02"
+                />
+            <ImageView
+                android:id="@+id/comment_dialog_xing_3_one"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="visible"
+                android:src="@drawable/game_star_big_02"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line"
+        ></View>
+
+
+
+</LinearLayout>

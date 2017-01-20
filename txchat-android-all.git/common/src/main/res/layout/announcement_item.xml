@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+         android:layout_marginTop="12dp"
+         android:layout_marginBottom="12dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/announcement_title"
+            style="@style/text_setting_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/announcement_sum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/announcement_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/anount_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line" />
+
+</LinearLayout>

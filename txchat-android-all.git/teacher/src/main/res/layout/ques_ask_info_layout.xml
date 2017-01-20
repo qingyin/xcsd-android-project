@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tuxing.app.qzq.view.MessageLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg"
+            >
+        <android.support.v4.view.ViewPager
+                android:id="@+id/question_askInfo_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+    </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/bar_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                android:background="@color/teacher_help_press"
+                android:orientation="vertical" >
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/qzq_gray" />
+
+            <LinearLayout
+                    android:id="@+id/ll_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:paddingTop="8dp">
+
+                    <com.tuxing.app.qzq.view.MessageEditText
+                            android:id="@+id/mailbox_info_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:maxLength="200"
+                            android:minHeight="35dp"
+                            android:paddingLeft="@dimen/dp_5"
+                            android:hint="写评论"
+                            android:textSize="@dimen/sp_15"
+                            android:textColor="@color/text_gray"
+                            android:background="@drawable/shape_chat_edit_border"
+                            android:maxLines="3"/>
+
+                    <Button
+                            android:id="@+id/mailbox_emoticons"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:layout_width="32dip"
+                            android:layout_height="32dip"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/question_comment_face"/>
+                    <Button
+                            android:id="@+id/mailbox_send"
+                            android:layout_width="45dp"
+                            android:layout_height="29dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/chat_send_btn_selector"
+                            android:onClick="onClick"
+                            android:text="@string/button_send"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/dp_1"
+                            android:visibility="gone"
+                            android:textColor="#666666"
+                            android:textSize="14sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_face_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="155dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <android.support.v4.view.ViewPager
+                                android:id="@+id/mailbox_Pager"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/mailbox_select"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingBottom="3dip"
+                        android:visibility="gone" >
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+</com.tuxing.app.qzq.view.MessageLinearLayout>

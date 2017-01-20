@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sorrt_zimu"
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:background="@color/bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="A"
+        android:textColor="@color/qzq_name" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/sorrt_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/sorrt_item_name"
+            style="@style/text_setting_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@id/sorrt_icon"
+            android:text="超超妈妈" />
+
+        <TextView
+                android:id="@+id/sorrt_item_no_active"
+                style="@style/text_setting_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="17dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:text="未激活" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

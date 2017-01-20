@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_set"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/name_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/text_setting_black"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/name_icon"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/black"
+            android:text="林语堂" />
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/name_heart"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:src="@drawable/learnwork_keysymbol_s" />
+
+
+        <TextView
+            android:id="@+id/item_times"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_arrow"
+            android:layout_margin="@dimen/dp_4"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/skin_text1"
+            android:text="7关" />
+
+        <TextView
+            android:id="@+id/sorrt_item_dones"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_times"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/gray"
+            android:layout_marginRight="@dimen/dp_6"
+            android:text="此次作业布置:" />
+
+        <ImageView
+            android:id="@+id/item_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_done"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/gray_normal"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/name_icon_done"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+
+
+        <TextView
+            android:id="@+id/item_name_done"
+            style="@style/text_setting_black"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/name_icon_done"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/black"
+            android:text="张小丽" />
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/name_heart_down"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:src="@drawable/learnwork_keysymbol_s" />
+
+
+        <TextView
+            android:id="@+id/item_tips_down"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_4"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/skin_text1"
+            android:text="该学生今天的作业已满" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/light_gray"
+        ></View>
+
+
+
+</LinearLayout>

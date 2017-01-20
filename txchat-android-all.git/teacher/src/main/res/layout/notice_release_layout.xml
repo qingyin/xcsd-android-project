@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/et_demand"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="请输入内容"
+                    android:maxLength="500"
+                    android:minHeight="120dp"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_totle_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_demand"
+                    android:layout_below="@id/et_demand"
+                    android:text="/500"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/hey_surplus_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_demand"
+                    android:layout_toLeftOf="@id/tv_totle_num"
+                    android:text="0"
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="添加图片(最多可添加9张图片)"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/qzq_name"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <com.tuxing.app.view.MyGridView
+                    android:id="@+id/demand_icon_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/tv"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:verticalSpacing="3dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_visible_dept"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_visible_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="收件人"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_gray" />
+
+                <TextView
+                    android:id="@+id/tv_dept_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_toLeftOf="@+id/iv_arrow"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_visible_dept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toLeftOf="@+id/tv_dept_count"
+                    android:layout_toRightOf="@+id/tv_visible_label"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="全部"
+                    android:textColor="@color/qzq_name"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

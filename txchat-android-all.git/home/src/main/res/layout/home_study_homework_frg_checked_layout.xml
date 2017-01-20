@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_home_frg_check_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="十二月份的学能作业"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/qzq_gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/weekName"
+                android:text="日" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="一" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="二" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="三" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="四" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="五" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="六" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/qzq_gray"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_calendar_circular" />
+
+            <TextView
+                android:id="@+id/tv_map1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="完成作业"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_pink_circular" />
+
+            <TextView
+                android:id="@+id/tv_map2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="未完成"
+                android:textColor="@color/black" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

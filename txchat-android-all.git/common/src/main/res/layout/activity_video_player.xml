@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/black" >
+
+    
+    <VideoView
+            android:id="@+id/playView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    <RelativeLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+           android:layout_alignTop="@id/playView"
+            android:layout_alignBottom="@id/playView"
+            android:alpha="0.4"
+            android:visibility="gone"
+            >
+
+        <com.tuxing.app.view.MyImageView
+                android:id="@+id/iv_back"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                />
+
+        <TextView
+                android:id="@+id/progressBar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignTop="@id/iv_back"
+                android:layout_alignBottom="@id/iv_back"
+                  android:textSize="20sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                  android:text="0%"
+                />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

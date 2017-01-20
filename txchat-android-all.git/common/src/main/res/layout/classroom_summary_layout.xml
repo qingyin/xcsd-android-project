@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:paddingBottom="@dimen/dp_10"
+              android:paddingLeft="@dimen/dp_10"
+              android:orientation="vertical"
+>
+
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/classroom_summary_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:textColor="@color/black"
+            android:text="这里是标题全部显示这里是标题全部显示这里是标题全部显示这里是标题全部显示"
+            android:textSize="@dimen/sp_15"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_12"
+    >
+        <TextView
+                android:id="@+id/classroom_learn_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="88888人学过"
+                android:textColor="@color/question_time"
+                android:textSize="@dimen/sp_11"/>
+
+        <LinearLayout
+                android:id="@+id/xing_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="6dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/classroom_learn_count"
+                >
+            <ImageView
+                    android:id="@+id/summary_xing_1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_m_selector"
+
+            />
+            <ImageView
+                    android:id="@+id/summary_xing_2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_m_selector"
+
+            />
+            <ImageView
+                    android:id="@+id/summary_xing_3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_m_selector"
+
+            />
+            <ImageView
+                    android:id="@+id/summary_xing_4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_m_selector"
+
+            />
+
+            <ImageView
+                    android:id="@+id/summary_xing_5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_m_selector"
+            />
+
+        </LinearLayout>
+        <TextView
+                android:id="@+id/classroom_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/xing_ll"
+                android:text="5分"
+                android:textColor="@color/classroom_view2"
+                android:textSize="@dimen/sp_11"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/qzq_gray"
+    />
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/classroom_view"
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="@dimen/dp_13"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/login_text_blue"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/classroom_view"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="课程概述"
+        />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_10"
+            android:background="@color/white">
+
+        <com.tuxing.app.view.ExpandTextView
+                android:id="@+id/summary_class_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+        </com.tuxing.app.view.ExpandTextView>
+        <ImageView
+                android:id="@+id/summary_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/expert_item_more"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/expert_detailed_more"
+                android:layout_below="@id/summary_class_summary"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/classromm_msg_more"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="@dimen/dp_10"
+        />
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/qzq_gray"
+            android:layout_marginTop="@dimen/dp_10"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/author_view"
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="@dimen/dp_13"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/login_text_blue"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:layout_toRightOf="@id/author_view"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="讲师"
+        />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_13"
+            android:paddingRight="@dimen/dp_10"
+    >
+
+
+        <ImageView
+                android:id="@+id/classroom_austor_icon"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
+                android:src="@drawable/default_avatar"/>
+
+
+            <TextView
+                    android:id="@+id/classroom_austor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:layout_toRightOf="@id/classroom_austor_icon"
+                    android:text="dddddddddddddddddd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"/>
+
+
+
+        <TextView
+                android:id="@+id/classroom_austor_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classroom_austor"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_15"
+                android:layout_alignLeft="@id/classroom_austor"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:text="dddddddddddddddddd"
+                android:textColor="@color/question_time"
+                android:paddingBottom="@dimen/dp_20"
+                android:textSize="@dimen/sp_13"/>
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

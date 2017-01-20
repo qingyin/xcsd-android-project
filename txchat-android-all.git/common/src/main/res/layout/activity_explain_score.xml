@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/test_back_img_layout"
+                android:layout_width="25dip"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/test_back_img"
+                    android:layout_width="12dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_left_p" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/test_back_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/test_back_img_layout"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/text_parent"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="注意力"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title_right_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="布置"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_teacher"
+            android:textSize="@dimen/dp_14"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_error_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/error_item_color"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:id="@+id/iv_neterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_error_icon"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_connect_errormsg"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的网络不给力，请检查一下网络"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_neterror"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/dialog_bg"
+        >
+
+        <TextView
+            android:id="@+id/tvTitle1"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:maxEms="10"
+            android:text="学能总积分: 0分"
+            android:textColor="@color/skin_text1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvTitle2"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:maxEms="10"
+            android:text="获得6学能积分"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:id="@+id/tv_explain_name"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="序列方阵: 6分"
+        android:textColor="#ffba00"
+        android:textSize="@dimen/sp_15"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_explain_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:text="获得6学能积分"
+        android:textColor="#ffba00"
+        android:textSize="@dimen/sp_15"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lc_level_02"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    <TextView
+        android:id="@+id/tv_explain_score_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_17"
+        android:text="30"
+        android:textColor="#ff7e00"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_explain_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_below="@+id/image_score"
+        android:text="超过10%你所在年级的用户"
+        android:textColor="#ffba00"
+        android:textSize="@dimen/sp_15"
+        />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lists"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/rl_error_item"
+        android:layout_weight="1">
+
+        <com.fortysevendeg.swipelistview.SwipeListView
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/home_acticity_list"
+            android:background="@color/bg"
+            android:cacheColorHint="@color/none"
+            android:listSelector="@color/none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="@null"
+            android:dividerHeight="0px"
+            swipe:swipeFrontView="@+id/rl"
+            swipe:swipeBackView="@+id/delete"
+            swipe:swipeActionLeft="reveal"
+            swipe:swipeActionRight="reveal"
+            swipe:swipeMode="none"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeOpenOnLongPress="false"
+            swipe:swipeAnimationTime="300"
+            swipe:swipeOffsetLeft="310dip"
+            swipe:swipeOffsetRight="200dip"
+            xlist:enableRefresh = "true"
+            xlist:enableLoad = "true"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/hey_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_colour_bg" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hey_icon"
+            android:gravity="center"
+            android:text="还没有获得学能积分，快去做游戏吧！"
+            android:textColor="@color/yws_black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+
+</LinearLayout>

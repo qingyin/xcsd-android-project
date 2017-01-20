@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+         >
+        <com.tuxing.app.view.MyImageView
+            android:id="@+id/lyceum_content_pic"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/defal_down_proress"
+            android:scaleType="centerCrop"
+             />
+        <TextView
+            android:id="@+id/lyceum_content_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/lyceum_content_pic"
+            android:gravity="left|center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/lyceum_content_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@id/lyceum_content_title"
+            android:layout_alignBottom="@id/lyceum_content_title"
+            android:minWidth="45dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_14" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lyceum_content_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line"
+        android:clickable="false"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:visibility="gone" />
+
+
+</LinearLayout>

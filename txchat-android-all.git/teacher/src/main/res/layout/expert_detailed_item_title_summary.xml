@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+>
+    <TextView
+            android:id="@+id/expert_detailed_item_qa_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="@color/teacher_quesiton_msg_text"
+            android:drawableLeft="@drawable/question_zan_select"
+            android:drawablePadding="3dp"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_alignTop="@+id/expert_detailed_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+    />
+
+    <TextView
+            android:id="@+id/expert_detailed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/expert_detail_text"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/expert_detailed_item_qa_like"
+            android:layout_marginTop="@dimen/dp_19"
+
+    />
+
+
+    <TextView
+            android:id="@+id/expert_detailed_count"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/qzq_comment_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_9"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:layout_below="@+id/expert_detailed_title"
+    />
+
+
+
+    <View
+            android:id="@+id/expert_detailed_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+           android:layout_below="@+id/expert_detailed_count"
+            android:background="@color/qzq_gray"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+
+    ></View>
+</RelativeLayout>

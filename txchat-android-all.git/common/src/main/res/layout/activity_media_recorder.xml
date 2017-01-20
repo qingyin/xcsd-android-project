@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+    <TextView
+            android:id="@+id/recorder_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_45"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:drawablePadding="5dp"
+
+
+            />
+
+    <RelativeLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recorder_left"
+      >
+
+
+        <SurfaceView
+            android:id="@+id/record_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/record_focusing"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <!-- camera_bottom_bg -->
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dip"
+        android:background="@android:color/black" >
+
+        <Button
+                android:id="@+id/record_controller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="按住拍摄"
+
+                android:paddingTop="@dimen/dp_40"
+                android:paddingBottom="@dimen/dp_40"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:textColor="@color/progress_bar" />
+
+            <com.tuxing.app.util.RoundProgressBar
+                    android:id="@+id/record_progress"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/dp_10"
+                    />
+    </RelativeLayout>
+
+
+</RelativeLayout>

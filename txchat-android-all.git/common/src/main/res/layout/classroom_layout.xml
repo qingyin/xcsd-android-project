@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/bg"
+        >
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/classroom_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:cacheColorHint="@color/none"
+            android:listSelector="@drawable/item_message_bg"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            xlist:enableRefresh="true"
+            xlist:enableLoad="true"
+            android:divider="@color/white"
+    />
+
+    <RelativeLayout
+            android:id="@+id/activity_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/no_colour_bg"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_icon"
+                android:gravity="center"
+                android:text="暂无信息"
+                android:textColor="@color/yws_black"
+                android:textSize="@dimen/sp_16"/>
+    </RelativeLayout>
+</RelativeLayout>

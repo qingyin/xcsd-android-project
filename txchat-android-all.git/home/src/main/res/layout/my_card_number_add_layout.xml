@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/add_card_name"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="请输入卡号"
+        android:textColor="@color/qzq_name"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:id="@+id/rl_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btn_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/verification_select"
+            android:text="@string/bind_card"
+            android:textColor="@color/skin_text1"
+            android:textSize="@dimen/sp_14" />
+
+        <com.tuxing.app.view.ClearEditText
+            android:id="@+id/et_card_number"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/btn_cloud"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLength="8"
+            android:padding="10dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_bind_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_26"
+        android:gravity="center_vertical"
+        android:text="已绑定卡"
+        android:textColor="@color/qzq_name"
+        android:textSize="@dimen/sp_14" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/btn_cloud_0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/card_bind_back"
+            android:text="@string/re_bind_card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/tv_card_icon_0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cloudcard_number_icon" />
+
+
+        <TextView
+            android:id="@+id/tv_card_number_0"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/btn_cloud_0"
+            android:layout_toRightOf="@id/tv_card_icon_0"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/btn_cloud_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/card_bind_back"
+            android:text="@string/re_bind_card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/tv_card_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cloudcard_number_icon" />
+
+        <TextView
+            android:id="@+id/tv_card_number_1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/btn_cloud_1"
+            android:layout_toRightOf="@id/tv_card_icon_1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/btn_cloud_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/card_bind_back"
+            android:text="@string/re_bind_card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+
+        <ImageView
+            android:id="@+id/tv_card_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cloudcard_number_icon" />
+
+        <TextView
+            android:id="@+id/tv_card_number_2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/btn_cloud_2"
+            android:layout_toRightOf="@id/tv_card_icon_2"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLength="8"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/card_msg"
+        android:textColor="@color/qzq_name"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

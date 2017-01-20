@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="10dip"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="94dp"
+                android:background="@drawable/my_profile_bg"
+                android:visibility="visible">
+
+                <com.tuxing.app.view.RoundImageView
+                    android:id="@+id/my_icon"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_info_image" />
+
+                <ImageView
+                    android:id="@+id/my_camera"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:layout_toRightOf="@id/my_icon"
+                    android:src="@drawable/camera_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/my_identity_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="我是孩子" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6">
+
+                    <ImageView
+                        android:id="@+id/userinfo_arrow_child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+
+                    <TextView
+                        android:id="@+id/my_identity"
+                        style="@style/text_gray_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginLeft="10dip"
+                android:background="@color/login_line"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_wipe_code"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="我的二维码" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6">
+
+                    <ImageView
+                        android:id="@+id/userinfo_arrow_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_wipe"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/userinfo_arrow_second"
+                        android:background="@drawable/ic_wipe"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_baby"
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="孩子" />
+
+                    <TextView
+                        android:id="@+id/my_baby_name"
+                        style="@style/text_gray_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_baby"
+                        android:layout_weight="6"
+                        android:gravity="right"
+                        android:paddingRight="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/login_line" />
+                <LinearLayout
+                    android:id="@+id/ll_my_wipe_child"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="孩子头像" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6">
+
+                        <ImageView
+                            android:id="@+id/userinfo_arrow_pic_child"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="matrix"
+                            android:src="@drawable/arrow_gray" />
+
+                        <com.tuxing.app.view.RoundImageView
+                            android:id="@+id/ri_wipe_child"
+                            android:layout_width="@dimen/dp_25"
+                            android:layout_height="@dimen/dp_25"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/userinfo_arrow_pic_child"
+                            android:background="@drawable/default_info_image"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/login_line" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/my_parent_name_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="监护人姓名" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6">
+
+                        <ImageView
+                            android:id="@+id/userinfo_arrow_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="matrix"
+                            android:src="@drawable/arrow_gray" />
+
+                        <TextView
+                            android:id="@+id/my_parent_name"
+                            style="@style/text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dip"
+                            android:gravity="right"
+                            android:hint="请输入孩子监护人的真实姓名" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/login_line" />
+
+                <LinearLayout
+                    android:id="@+id/my_baby_sex_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_baby_sex"
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="孩子性别" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6">
+
+                        <TextView
+                            android:id="@+id/my_baby_sex"
+                            style="@style/text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingRight="20dp" />
+
+                        <ImageView
+                            android:id="@+id/userinfo_arrow_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="matrix"
+                            android:src="@drawable/arrow_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/login_line" />
+
+                <LinearLayout
+                    android:id="@+id/my_baby_birth_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_baby_birth"
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="孩子生日" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6">
+
+                        <TextView
+                            android:id="@+id/my_baby_birth"
+                            style="@style/text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:hint="输入孩子生日"
+                            android:paddingRight="20dp" />
+
+                        <ImageView
+                            android:id="@+id/userinfo_arrow_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="matrix"
+                            android:src="@drawable/arrow_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/login_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_my_class"
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="班级" />
+
+                    <TextView
+                        android:id="@+id/my_class"
+                        style="@style/text_gray_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_my_class"
+                        android:layout_weight="6"
+                        android:gravity="right"
+                        android:paddingRight="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/login_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_my_school"
+                        style="@style/text_setting_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="学校" />
+
+                    <TextView
+                        android:id="@+id/my_school"
+                        style="@style/text_gray_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="right"
+                        android:paddingRight="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

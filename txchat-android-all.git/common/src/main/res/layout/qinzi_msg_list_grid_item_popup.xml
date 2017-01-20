@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="200px"
+              android:layout_height="wrap_content"
+              android:background="@drawable/qzq_pop_windown_shape"
+              android:orientation="horizontal"
+              android:paddingTop="3dp"
+              android:paddingBottom="3dp"
+              android:gravity="center_horizontal">
+
+    <com.tuxing.app.view.MyCheckBox
+            android:id="@+id/cb_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:button="@drawable/qzq_zan_select"
+            android:paddingLeft="20px"
+            android:layout_marginLeft="10dp"
+            android:text="赞"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/white"/>
+
+    <com.tuxing.app.view.MyCheckBox
+            android:id="@+id/cb_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/qzq_comment_select"
+            android:paddingLeft="20px"
+            android:layout_marginRight="10dp"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_12"/>
+</LinearLayout>

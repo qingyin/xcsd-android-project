@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_25">
+
+    <RelativeLayout
+        android:id="@+id/rl_ques_item_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ques_info_head_icon"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:src="@drawable/default_avatar" />
+
+
+        <TextView
+            android:id="@+id/question_info_item_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/question_info_item_icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/question_info_item_icon"
+            android:drawableLeft="@drawable/question_zan_select"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_15"
+            android:textColor="@color/teacher_quesiton_msg_text"
+            android:textSize="@dimen/sp_12" />
+
+
+        <RelativeLayout
+            android:id="@+id/llNameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ques_info_head_icon"
+            android:layout_alignTop="@id/ques_info_head_icon"
+            android:layout_toLeftOf="@id/question_info_item_zan"
+            android:layout_toRightOf="@id/ques_info_head_icon">
+
+            <TextView
+                android:id="@+id/ques_item_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/expert_detail_text"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/ques_info_item_head_right_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/ques_item_head_name"
+                android:gravity="center"
+                android:textColor="@color/question_time_bg"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/ques_item_head_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ques_item_head_name"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_toRightOf="@id/ques_item_head_name"
+                android:background="@drawable/expert_type_shape"
+                android:paddingLeft="@dimen/dp_2"
+                android:paddingRight="@dimen/dp_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ques_info_item_head_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="53dp"
+        android:textColor="@color/qzq_comment_content"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/sp_17" />
+
+    <LinearLayout
+        android:id="@+id/ll_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/question_title_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@color/question_ask_head_bg">
+
+        <ImageView
+            android:id="@+id/ask_header_ques_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/ques_info_item_head_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/ask_header_ques_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:textIsSelectable="true"
+            android:paddingRight="@dimen/dp_5"
+            android:textColor="@color/qzq_comment_content"
+            android:textSize="@dimen/sp_13" />
+        >
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/question_info_header__bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:paddingBottom="@dimen/dp_50"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hey_icon"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ques_no_ans_icon"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="稍后专家会为你解答"
+            android:textColor="@color/grid_background"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+
+</LinearLayout>

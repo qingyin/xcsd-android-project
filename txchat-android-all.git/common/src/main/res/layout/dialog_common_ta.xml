@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <LinearLayout
+            android:id="@+id/rl_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/checkin_reward"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_score_number_checkin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/skin_text1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 微豆"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/skin_text1"
+                android:textSize="15sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_score_number"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/reward_count_bg"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_score_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+100"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="微豆"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_score_number"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+    </RelativeLayout>
+
+
+    <com.tuxing.app.ui.dialog.DialogTitleView
+            android:id="@+id/dialog_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/global_dialog_padding"/>
+
+    <View
+            android:id="@+id/button_bar_divider"
+            style="@style/section_item_divider"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:id="@+id/button_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/negative_bt"
+                style="@style/dialog_button"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        <View
+                android:id="@+id/button_divder"
+                style="@style/section_item_divider_vertical"
+                android:visibility="gone"/>
+
+        <Button
+                android:id="@+id/positive_bt"
+                style="@style/dialog_button"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

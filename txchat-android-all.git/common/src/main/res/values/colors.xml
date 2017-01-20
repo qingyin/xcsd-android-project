@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 2.0  UI -->
+    <color name="home_checkin_dot_blue">#82d7ff</color>
+    <color name="pink">#ff8080</color>
+    <color name="login_account_color">#BBBBBB</color>
+    <color name="login_line">#EFEFEF</color>
+    <color name="login_line_bg">#ff933d</color>
+    <color name="skin_text1">#FDA029</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#444444</color>
+    <color name="qzq_title_black">#000000</color>
+    <color name="gray">#757575</color>
+    <color name="normal">#efefef</color>
+    <color name="qzq_zan_line">#e1e1e1</color>
+    <color name="qzq_name">#496877</color>
+    <color name="qzq_comment_bg">#f0f0f0</color>
+    <color name="qzq_pop_bg">#727272</color>
+    <color name="chat_text_name">#44687a</color>
+    <color name="arrow_regresh">#8e8e8e</color>
+    <color name="arrow_bg">#5f5f5f</color>
+    <color name="yws_black">#4b4b4b</color>
+    <color name="yws_gray">#9e9e9e</color>
+    <color name="bg">#EFEFEF</color>
+    <color name="btn_press">#dd5f0c</color>
+    <color name="gray_normal">#C9CACA</color>
+    <color name="qzq_gray">#e5e5e5</color>
+    <color name="progress_bar">#fca029</color>
+    <color name="video_black">#030303</color>
+    <color name="white40">#40FFFFFF</color>
+
+    <color name="qzq_comment_content">#484848</color>
+    <color name="question_replase">#cacaca</color>
+    <color name="question_name">#7a8b9b</color>
+    <color name="question_time">#838383</color>
+    <color name="teacher_help_press">#f6f6f6</color>
+    <color name="text_no_data">#d1d1d1</color>
+    <color name="text_teacher">#8a8fff</color>
+    <color name="text_parent">#32b9ff</color>
+
+    <color name="grey">#a0a0a0</color>
+    <color name="grey1">#d6d6d6</color>
+    <color name="grey2">#f7f7f7</color>
+    <color name="grey3">#20999999</color>
+    <color name="grey5">#dbdbdb</color>
+    <color name="grey8">#dcdcdc</color>
+    <color name="grey11">#ababab</color>
+    <color name="grey12">#fafafa</color>
+    <color name="grey13">#9d9d9d</color>
+    <color name="grey14">#f4f4f4</color>
+    <color name="grey18">#c7c7c7</color>
+    <color name="grey19">#c6c6c6</color>
+    <color name="grey20">#bec4cd</color>
+    <color name="grey37">#c0c0c0</color>
+    <color name="grey38">#d3d3d3</color>
+    <color name="grey49">#bbbbbb</color>
+
+    <color name="edu_color_1">#58d68d</color>
+    <color name="edu_color_2">#2b7fb8</color>
+    <color name="edu_color_5">#3898db</color>
+
+    <color name="blue">#0089d0</color>
+    <color name="blue8">#1fa0d4</color>
+
+    <color name="black5">#212121</color>
+    <color name="black6">#000000</color>
+    <color name="black8">#666666</color>
+    <color name="black9">#111111</color>
+    <color name="black_transparent">#f0000000</color>
+
+    <color name="rank_txt">#1fa0d5</color>
+    <color name="rank_txt_bg">#61209fd4</color>
+
+    <color name="txt_bg">#919191</color>
+
+    <color name="diary_popup_bg">#9caed3</color>
+    <color name="diary_popup_bg_click">#8ca2cf</color>
+
+    <color name="red">#d12816</color>
+    <color name="red1">#fe0200</color>
+
+    <color name="classroom_view">#f1f1f1</color>
+    <color name="classroom_view1">#999999</color>
+    <color name="classroom_view2">#ffb556</color>
+    <color name="login_text_blue">#41C3FF</color>
+    <color name="classroom_view4">#f7f7f7</color>
+    <color name="classroom_view3">#d0d6d9</color>
+    <color name="calendar_color_gray">#cccccc</color>
+    <color name="skin_text_blue">#5fc8fa</color>
+    <color name="skin_text_blue_on">#2E98C9</color>
+    <color name="skin_text_pink">#fd8dc4</color>
+    <color name="skin_text_pink_on">#F280b9</color>
+    <color name="skin_text_red">#f9747a</color>
+    <color name="skin_text_red_on">#ed868b</color>
+    <color name="login_bg">#F3F3F3</color>
+    <color name="devider_line_color">#e5e5e5</color>
+    <color name="educ_msg_unread_bg">#FF0000</color>
+    <color name="video_view_bg_color">#000000</color>
+
+
+
+    <!-- 2.0 -->
+    <color name="gray_bg">#efefef</color>
+    <color name="text_dark">#af000000</color>
+    <color name="login_edit_bg">#EDEDED</color>
+    <color name="bg_base_dark">#cccccc</color>
+    <color name="title_text">#EE7800</color>
+    <color name="title_text_dark">#C26200</color>
+    <color name="text_gray">#9F9F9F</color>
+    <color name="skin_text1_0.5">#55fd8584</color>
+    <color name="bao_dian_info_item_name">#7a8b9b</color>
+
+    <color name="circle_pink">#fb8dc4</color>
+
+    <color name="head_title">#FEFEFE</color>
+    <!-- head标题 -->
+    <color name="title_black">#4C4948</color>
+    <!-- 标题 -->
+    <color name="text_black">#727171</color>
+    <!-- 内容 -->
+
+
+    <!-- 2.0 -->
+    <color name="black_text">#a4a4a4</color>
+    <color name="status_bg">#F4E9CA</color>
+    <color name="status_text">#E47266</color>
+    <color name="status_text_gray">#B5B5B6</color>
+    <color name="status_text_green">#B6BE6C</color>
+    <color name="black_light">#aa000000</color>
+    <color name="black_light1">#88000000</color>
+    <color name="lv_msg_divier">#D2D0CC</color>
+    <color name="none">#00000000</color>
+    <color name="btn_status_tx">#f5e5c9</color>
+    <color name="el_contact_bg">#f7f8f8</color>
+    <color name="text_change_pwd">#e57067</color>
+    <color name="text_disturb">#aaaaa9</color>
+    <color name="text_praise_blue">#41bdce</color>
+    <color name="text_info_title">#595757</color>
+    <color name="text_info_velue">#8c8d8d</color>
+    <color name="view_info_line">#f7f8f8</color>
+    <color name="tv_notice_content">#6c6a68</color>
+    <color name="page_indicator_color">#d7d7d7</color>
+    <color name="arc_separator_color">#f3f3f3</color>
+    <color name="tv_red">#E8857c</color>
+    <color name="tv_name">#595757</color>
+    <color name="tv_text">#B5B5B6</color>
+    <color name="class_list_item_normal">#ffefefef</color>
+    <color name="class_list_item_pressed">#e6e6e6</color>
+    <color name="msg_content">#595757</color>
+    <color name="grid_background">#ddd</color>
+    <color name="chat_text_name_color">#818181</color>
+    <color name="notice_tab_selected">#B5DFE3</color>
+    <color name="title_red_color">#e57067</color>
+    <color name="chat_audio_text_color">#9fa0a0</color>
+    <color name="tab_title_text_color">#c9caca</color>
+    <color name="msg_chat_view_bg">#F8F8F8</color>
+    <color name="gray_line">#dfdfdf</color>
+    <color name="school_home_bg">#EBEBEB</color>
+    <color name="tv_send_finished">#6ABF62</color>
+    <color name="card_time_bg">#F2C436</color>
+    <color name="expert_item_more">#838383</color>
+    <color name="expert_item_like">#666666</color>
+
+    <!-- 001默认色-fd8584  #FA6F13 -->
+
+    <color name="skin_text2">#68bf61</color>
+    <color name="skin_text3">#f279ac</color>
+    <color name="skin_text4">#cdcd53</color>
+    <color name="skin_text5">#ff5766</color>
+    <color name="skin_text6">#37a9cd</color>
+    <color name="skin_text7">#ffaf40</color>
+    <color name="skin_text8">#54879a</color>
+    <color name="skin_text9">#504e64</color>
+    <color name="skin_text10">#37a9cd</color>
+    <color name="card_bg">#efefef</color>
+    <!-- 教师端 -->
+    <color name="rb_frg_blue_bg">#46bef0</color>
+    <!-- 环信 -->
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_login_pressed">#46678d</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="btn_answer_pressed">#4ebcd3</color>
+    <color name="btn_answer_normal">#2dafa3</color>
+
+
+    <color name="mc_normal_text_white">#ffffffff</color>
+    <color name="mc_event_gray">#808080</color>
+    <color name="mc_title">#44caaa</color>
+    <color name="mc_chat_text">#010101</color>
+    <color name="mc_chat_box_bg">#c9c9ce</color>
+    <color name="mc_send_btn_bg">#595959</color>
+    <color name="mc_leave_msg_tip_bg">#f6bc66</color>
+    <color name="mc_net_not_work_bg">#e66b62</color>
+    <color name="mc_play_circle_round">#E6E6E6</color>
+    <color name="mc_play_circle_progress">#43CAA9</color>
+
+    <!-- dialog -->
+    <color name="list_divider_color">#DADADA</color>
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+    <color name="text_light">#3f000000</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+    <color name="list_item_background_pressed">#efefef</color>
+    <color name="teamlist_item_background_normal">#ffffff</color>
+    <color name="list_item_background_normal">@color/white</color>
+
+    <!-- qinzi #CE3D3D-->
+    <color name="feed_name_text">#859A51</color>
+    <color name="feed_main_text">#767676</color>
+
+    <!--umeng share-->
+    <color name="transparent">#00000000</color>
+    <color name="umeng_socialize_comments_bg">#F4F4F4</color>
+    <color name="umeng_socialize_color_group">#2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#333333</color>
+    <color name="umeng_socialize_list_item_bgcolor">#FFFFFF</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+    <color name="umeng_socialize_text_time">#999999</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="umeng_socialize_text_friends_list">#959696</color>
+    <color name="umeng_socialize_text_share_content">#666666</color>
+    <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
+    <color name="umeng_socialize_text_ucenter">#595959</color>
+    <color name="umeng_socialize_edit_bg">#C4C4C4</color>
+    <color name="umeng_socialize_grid_divider_line">#F8F8F8</color>
+
+
+    <!--<color name="teacher_help_theme_color">#ff933d</color>-->
+    <color name="teacher_help_theme_color">#43a9ff</color>
+    <color name="teacher_bottom_text_color">#707d84</color>
+    <color name="teacher_quesiton_content">#696969</color>
+    <color name="teacher_quesiton_msg_text">#84a2b3</color>
+    <color name="expert_item_bg1">#c6bab3</color>
+    <color name="expert_item_bg2">#b7c2ca</color>
+    <color name="expert_item_bg3">#ddd9d8</color>
+    <color name="expert_item_text">#403228</color>
+    <color name="expert_detail_text">#3f6e88</color>
+    <color name="question_time_bg">#828282</color>
+    <color name="question_item_bg">#f2f2f2</color>
+    <color name="question_ask_head_bg">#f0f6f9</color>
+
+
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <!--<color name="round_corner_progress_bar_progress_default">#7f7f7f</color>-->
+    <color name="background_content">#ff454344</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent</color>
+    <color name="custom_progress_background">#ff3c3a3b</color>
+    <color name="custom_progress_orange_header">#ffffbb33</color>
+    <color name="custom_progress_orange_progress">#ffff8800</color>
+    <color name="custom_progress_orange_progress_half">#7fff8800</color>
+
+    <color name="circle_topmenu_bg">#66000000</color>
+
+    <color name="share_dialog_bg">#e5e6e6</color>
+    <color name="share_dialog_cancel_text">#333333</color>
+    <color name="share_dialog_cancel_text_bg">#f3f3f3</color>
+    <color name="select_video_time">#bcbcbb</color>
+
+    <color name="pic_view_bg_color">#000000</color>
+    <color name="black_70">#70000000</color>
+    <color name="cut_video_msg">#faf9f9</color>
+    <color name="cut_video_bg">#212121</color>
+
+
+    <color name="share_editview">#00000000</color>
+    <color name="share_delete">#7fcccccc</color>
+
+</resources>

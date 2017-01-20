@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+    <FrameLayout
+            android:id="@+id/fl_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <com.tuxing.app.view.MyImageView
+                android:id="@+id/iv_top_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="207dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/qzq_banner_bg_new"/>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="87dp"
+                android:layout_gravity="top|left"
+                android:background="@drawable/qzq_header_bg"
+                android:layout_marginTop="120dp">
+        </ImageView>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="120dp">
+
+                <RelativeLayout
+                        android:id="@+id/ll_portrait"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_marginLeft="@dimen/dp_10">
+
+                    <com.tuxing.app.view.RoundImageView
+                            android:layout_width="73dp"
+                            android:layout_height="73dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/shape_whiter">
+                    </com.tuxing.app.view.RoundImageView>
+
+                    <com.tuxing.app.view.RoundImageView
+                            android:id="@+id/iv_portrait"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/default_avatar">
+                    </com.tuxing.app.view.RoundImageView>
+                </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/ll_portrait"
+                >
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_below="@+id/fl_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_class_pictures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:singleLine="true"
+                    android:text="班级相册"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/tv_class_pictures"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/qzq_xc"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:background="@color/qzq_gray"/>
+
+
+            <TextView
+                    android:id="@+id/tv_my_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:text="\@ 与我相关"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_below="@+id/rg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/bg"
+            ></View>
+
+        <TextView
+                android:layout_below="@+id/view_line"
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerInParent="true"
+                android:background="@drawable/qzq_new_msg_shape"
+                android:gravity="center"
+                android:textColor="@color/qzq_name"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/sp_12"
+                android:text="10"
+                android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

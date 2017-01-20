@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <FrameLayout
+            android:id="@+id/main_tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    <View
+            android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_0.5"
+            android:background="@color/qzq_gray"
+            />
+
+    <android.support.v4.app.FragmentTabHost
+            android:id="@+id/main_tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:layout_gravity="center"
+            android:background="@color/white">
+    </android.support.v4.app.FragmentTabHost>
+
+</LinearLayout>

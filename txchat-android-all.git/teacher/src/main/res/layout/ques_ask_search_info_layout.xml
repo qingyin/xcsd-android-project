@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:orientation="vertical" >
+
+    <EditText
+            android:id="@+id/question_title"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:background="@color/white"
+            android:maxLength="20"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_17"
+            android:paddingRight="@dimen/dp_17"
+            android:textColor="@color/qzq_comment_content"
+            android:textSize="@dimen/sp_18"
+            android:hint="请输入问题标题: 5-20字"
+            android:textColorHint="@color/question_time_bg"/>
+
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ask_search_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/none"
+            android:divider="@color/qzq_gray"
+            android:background="@color/white"
+            android:paddingRight="@dimen/dp_13"
+            android:paddingLeft="@dimen/dp_14"
+            android:dividerHeight="1px"
+            android:listSelector="@drawable/item_message_bg"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true" />
+
+
+
+</LinearLayout>

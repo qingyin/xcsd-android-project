@@ -1,0 +1,31 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+    <com.tuxing.app.view.RoundImageView
+            android:id="@+id/contact_item_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar"/>
+
+    <TextView
+            android:id="@+id/contact_item_name"
+            style="@style/text_setting_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/contact_item_icon"
+            android:text="超超妈妈"/>
+
+
+</RelativeLayout>

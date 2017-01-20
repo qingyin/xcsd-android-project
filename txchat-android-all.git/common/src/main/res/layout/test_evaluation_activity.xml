@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_evaluation_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/test_evaluation_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/task_header_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/test_evaluation_back_img_layout"
+                android:layout_width="25dip"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/test_evaluation_back_img"
+                    android:layout_width="12dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_left_p" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/test_evaluation_back_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/test_evaluation_back_img_layout"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/text_parent"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/test_evaluation_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/test_evaluation"
+                android:textColor="@color/black"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/repeat_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/repeat_test"
+                android:textColor="@color/text_parent"
+                android:textSize="16dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="35dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/related_article"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:background="@color/edu_color_5"
+            android:text="@string/related_article"
+            android:textColor="@drawable/btn_white_txt_font"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/related_task"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:background="@color/edu_color_5"
+            android:text="@string/related_task"
+            android:textColor="@drawable/btn_white_txt_font"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel_layout"
+        android:layout_below="@id/test_evaluation_header"
+        android:layout_margin="15dip"
+        android:background="@drawable/corner_white_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/test_evaluation_img"
+            android:layout_width="match_parent"
+            android:layout_height="12dip"
+            android:layout_margin="0.8dip" />
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/test_evaluation_act_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+id/mid_line"
+                android:layout_width="1dip"
+                android:layout_height="30dip"
+                android:layout_centerInParent="true"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/share_test_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/mid_line" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/share_test_img"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/share_result" />
+
+                    <TextView
+                        android:id="@+id/share_test_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:text="@string/share_test"
+                        android:textColor="@color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share_result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/mid_line" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/share_result_img"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/share_result" />
+
+                    <TextView
+                        android:id="@+id/share_result_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:text="@string/share_result"
+                        android:textColor="@color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/act_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_above="@id/test_evaluation_act_layout"
+            android:background="@color/grey1" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/act_line"
+            android:layout_below="@id/test_evaluation_img"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="103dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/rank_bg" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@color/transparent"
+                            android:orientation="horizontal" >
+
+                            <RelativeLayout
+                                android:layout_width="45dip"
+                                android:layout_height="45dip" >
+
+                                <ImageView
+                                    android:id="@+id/rank_baby_img"
+                                    android:layout_width="43.5dip"
+                                    android:layout_height="43.5dip"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/default_baby_img" />
+
+                                <ImageView
+                                    android:layout_width="45dip"
+                                    android:layout_height="45dip"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/icon_big_border" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/rank_baby_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dip"
+                                android:text="@string/baby"
+                                android:textColor="@color/rank_txt"
+                                android:textSize="16dip" />
+
+                            <TextView
+                                android:id="@+id/rank_baby_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="39dip"
+                                android:text="@string/def_rank_num"
+                                android:textColor="@color/rank_txt"
+                                android:textSize="35dip" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/rank_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dip"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="10dip"
+                            android:background="@drawable/corner_rank_txt_bg"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/def_rank_txt"
+                            android:textColor="@color/white"
+                            android:textSize="12dip" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="58dip"
+                        android:layout_height="102dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="2dip"
+                        android:src="@drawable/rank_inset" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/test_evaluation_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:lineSpacingMultiplier="1.6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

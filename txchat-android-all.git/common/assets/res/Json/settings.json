@@ -1,0 +1,80 @@
+{
+    "startFish": 10,
+    "maxFish": 20,
+    "fishSpeed": 30,
+    "fishSpeedIncrement": 5,
+    "foodTime": 2,
+    "foodTimeIncrement": 0.05,
+    "fishScale": 0.85,
+    "foodShakeScale": 1.0,
+	"koiSize": {
+		"width": 100,
+		"height": 154
+	},
+	"foodContainerSize": {
+		"width": 168,
+		"height": 119
+	},
+	"backgroundImage": "res/background.jpg",
+	"pondTintTransitionTime":2.5,
+
+	"pondTints": [
+		[112, 195, 112, 255],
+		[66, 179, 148, 255],
+		[0, 143, 117, 255],
+		[0, 99, 109, 255],
+		[12, 58, 83, 255],
+		[0, 55, 255, 0]
+	],
+	"pondTintsTT": [
+		[
+			255,
+			235,
+			56,
+			100,
+			"pond4"
+		],
+		[
+			100,
+			255,
+			255,
+			100,
+			"pond1"
+		],
+		[
+			50,
+			145,
+			30,
+			52,
+			"pond3"
+		],
+		[
+			0,
+			94,
+			255,
+			64,
+			"pond2"
+		],
+		[
+			0,
+			17,
+			102,
+			160,
+			"pond5"
+		],
+		[
+			0,
+			55,
+			255,
+			0,
+			"pond1x"
+		]
+	],
+	"fishShaderOrder": [
+		4,
+		1,
+		3,
+		2,
+		5
+	]
+}

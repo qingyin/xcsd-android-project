@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/sorrt_icon"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+
+
+            <TextView
+                android:id="@+id/sorrt_item_name"
+                style="@style/text_setting_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/sorrt_icon"
+                android:textSize="@dimen/sp_15"
+                android:text="什么是学习能力？" />
+
+
+        <TextView
+            android:id="@+id/sorrt_item_time"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_12"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:text="" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line"
+        ></View>
+
+
+
+</LinearLayout>

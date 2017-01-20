@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_old_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_recycle"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            >
+
+            <EditText
+                android:id="@+id/et_input_select"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/share_editview"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14"
+                android:visibility="invisible"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_horizontal_show"
+                android:layout_toLeftOf="@+id/et_input_select"
+                android:layout_width="400dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/share_editview"
+                android:gravity="center"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_old_pwd"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white">
+
+
+        <ListView
+            android:id="@+id/select_receiver_class_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/bg"
+            android:divider="@color/login_line"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+
+        <com.tuxing.app.util.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

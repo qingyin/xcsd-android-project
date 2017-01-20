@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingLeft="@dimen/dp_7"
+                android:background="@color/white"
+>
+
+
+
+    <TextView
+            android:id="@+id/select_icon"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+            android:background="@drawable/question_select_tag"/>
+    <RadioButton
+            android:id="@+id/select_name"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:button="@null"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/select_icon"
+            android:layout_centerVertical="true"
+            android:text="ddddd"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/qzq_comment_content"
+    />
+
+</RelativeLayout>

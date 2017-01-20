@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+        <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_title_right_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+
+            <TextView
+                    android:id="@+id/tv_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="@null"
+                    android:text="取消"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"/>
+            <LinearLayout
+                    android:id="@+id/ll_left_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+                <ImageView
+                        android:id="@+id/iv_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/contact_manager"
+                        android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/pullProgressBar"
+                    style="?android:attr/progressBarStyleSmallTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/btn_back"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_back"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="150sp"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxEms="10"
+                />
+
+        <Button
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_title_right_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:text="选择"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14"
+                android:visibility="gone"/>
+
+        <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true">
+            <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/contact_manager"
+                    android:scaleType="fitXY"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/ll_second_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/ll_right">
+            <ImageView
+                    android:id="@+id/iv_second_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/contact_manager"
+                    android:scaleType="fitXY"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_0.5"
+          android:background="@color/bg"/>
+</LinearLayout>

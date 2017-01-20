@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="10dip"
+            >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dip"
+                    android:background="@drawable/banner_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                <com.tuxing.app.view.RoundImageView
+                        android:id="@+id/lyceuminfo_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/default_avatar"/>
+
+                <TextView
+                        android:id="@+id/lyceuminfo_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/lyceuminfo_icon"
+                        android:text="乐学堂"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_item_text_size"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:id="@+id/my_setting_service_deal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:id="@+id/tv"
+                            style="@style/text_setting_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="介绍"/>
+
+                    <TextView
+                            android:id="@+id/lyceuminfo_sum"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv"
+                            android:text="北京土星幼儿园"
+                            android:padding="5dp"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/main_item_text_size"/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/bg"/>
+
+                <RelativeLayout
+                        android:id="@+id/my_setting_about_app"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                    <TextView
+                            android:id="@+id/tv"
+                            style="@style/text_setting_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="账号所属"/>
+
+                    <TextView
+                            android:id="@+id/lyceuminfo_suoshu"
+                            style="@style/text_setting_black"
+                            android:layout_width="wrap_content"
+                            android:layout_toRightOf="@id/tv"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="账号所属"/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/bg"/>
+
+                <RelativeLayout
+                        android:id="@+id/manager_no_distrub"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:visibility="visible">
+
+                    <TextView
+                            style="@style/text_setting_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="接收消息"/>
+
+                    <ToggleButton
+                            android:id="@+id/lyceuminfo__button"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:button="@null"
+                            android:background="@drawable/ios7_btn"
+                            android:checked="false"
+                            android:textOff=""
+                            android:textOn=""/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/bg"/>
+
+                <RelativeLayout
+                        android:id="@+id/lyceuminfo_query_msg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                    <TextView
+                            style="@style/text_setting_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看历史消息"/>
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="matrix"
+                            android:src="@drawable/arrow_gray"/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/bg"/>
+
+                <RelativeLayout
+                        android:id="@+id/lyceuminfo_clean_msg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                    <TextView
+                            style="@style/text_setting_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="清空内容"/>
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="matrix"
+                            android:src="@drawable/arrow_gray"/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/bg"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

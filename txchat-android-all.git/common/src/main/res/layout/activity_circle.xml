@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tuxing.app.qzq.view.MessageLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <me.maxwin.view.XListView
+                xmlns:xlist="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/xListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg"
+                android:cacheColorHint="@color/white"
+                android:listSelector="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                xlist:enableLoad="true"
+                xlist:enableRefresh="true"/>
+
+            <!--顶部菜单布局-->
+            <RelativeLayout
+                android:id="@+id/qzq_top_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                    <View
+                        android:id="@+id/qzq_top_menu_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/circle_topmenu_bg"/>
+
+                    <LinearLayout
+                        android:id="@+id/qzq_top_menu_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/qzq_add_type_thumb"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_70"
+                                android:layout_marginRight="@dimen/dp_20"
+                                android:text="图片"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:drawableTop="@drawable/qzq_add_thumb"/>
+                            <TextView
+                                android:id="@+id/qzq_add_type_camera"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_70"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:text="拍照"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:drawableTop="@drawable/qzq_add_camera"/>
+                            <TextView
+                                android:id="@+id/qzq_add_type_shoot"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_70"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:text="拍视频"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:drawableTop="@drawable/qzq_add_shoot"/>
+                            <TextView
+                                android:id="@+id/qzq_add_type_video"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_70"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:text="导入视频"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:drawableTop="@drawable/qzq_add_video"/>
+
+
+                    </LinearLayout>
+            </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/ll_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/qzq_gray"
+            android:gravity="center"
+            android:paddingTop="0.5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+            <Button
+                    android:id="@+id/bt_add_face"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/chat_biaoqing_btn"/>
+
+            <com.tuxing.app.qzq.view.MessageEditText
+                    android:id="@+id/et_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:maxLength="200"
+                    android:textSize="@dimen/sp_14"
+                    android:background="@drawable/btn_audio_input_normal"
+                    android:maxLines="4"/>
+
+            <Button
+                    android:id="@+id/bt_send"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/chat_send_btn_selector"
+                    android:text="@string/btn_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="#666666"
+                    android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/llFace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line"/>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="135dp"
+                android:layout_gravity="center">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+                android:id="@+id/page_select"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="3dip">
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line"/>
+    </LinearLayout>
+
+</com.tuxing.app.qzq.view.MessageLinearLayout>

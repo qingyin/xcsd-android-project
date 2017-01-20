@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_home_study_frg_rank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/none"
+        android:listSelector="@color/none"
+
+
+        android:scrollbars="@null"
+        android:dividerHeight="0px"></ListView>
+    <!--
+        <com.fortysevendeg.swipelistview.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        xmlns:xlist="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swip_home_study_homework_rank"
+        android:background="@color/bg"
+        android:cacheColorHint="@color/none"
+        android:listSelector="@color/none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:scrollbars="@null"
+        android:dividerHeight="0px"
+        swipe:swipeFrontView="@+id/rl"
+        swipe:swipeBackView="@+id/delete"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeMode="none"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeOpenOnLongPress="false"
+        swipe:swipeAnimationTime="300"
+        swipe:swipeOffsetLeft="310dip"
+        swipe:swipeOffsetRight="200dip"
+        xlist:enableRefresh = "true"
+        xlist:enableLoad = "true"
+        android:visibility="gone"
+        />
+    -->
+
+
+
+</LinearLayout>

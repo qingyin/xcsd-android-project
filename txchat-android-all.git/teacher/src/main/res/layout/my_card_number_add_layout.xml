@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/add_card_name"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/qzq_name"
+        android:textSize="@dimen/sp_14" />
+
+    <com.tuxing.app.view.ClearEditText
+        android:id="@+id/et_card_number"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:hint="请输入云卫士卡号"
+        android:inputType="number"
+        android:maxLength="8"
+        android:padding="10dp"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+                android:id="@+id/btn_cloud"
+                style="@style/text_setting_black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_red_bg_selector"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                 />
+
+</LinearLayout>

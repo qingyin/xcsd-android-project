@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_set"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/black"
+            android:text="定制作业" />
+
+        <TextView
+            android:id="@+id/item_tips_down_name"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/tv_red"
+            android:text="当天作业已满" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_dones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/item_name"
+            android:layout_toLeftOf="@+id/item_arrow"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/gray"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:text="游学堂会根据学生学能成绩为学生专门定制化布置适合学生水平的作业" />
+
+        <ImageView
+            android:id="@+id/item_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_gray" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_done"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/gray_normal"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <TextView
+            android:id="@+id/item_names"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/black"
+            android:text="统一作业" />
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/item_names"
+            android:layout_toLeftOf="@+id/item_arrows"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/gray"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:text="游学堂会根据学生学能成绩为学生专门定制化布置适合学生水平的作业" />
+
+        <ImageView
+            android:id="@+id/item_arrows"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_gray" />
+
+
+
+        <TextView
+            android:id="@+id/item_tips_down"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_names"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/tv_red"
+            android:text="当天作业已满" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/gray"
+        ></View>
+
+
+
+</LinearLayout>

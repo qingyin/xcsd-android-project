@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+
+    <LinearLayout
+        android:id="@+id/activity_noicon_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/activity_title"
+            style="@style/text_setting_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+             />
+
+        <TextView
+            android:id="@+id/activity_sum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/activity_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_isicon_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+          android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:visibility="visible" >
+
+        <com.tuxing.app.view.RoundAngleImageView
+            android:id="@+id/activity_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_face" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/activity_icon"
+            android:layout_toLeftOf="@id/activity_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_isicon_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="dddddddddddddddddddddddddddddd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/activity_isicon_sum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:minLines="2"
+                android:paddingRight="10dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/activity_isicon_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2015-06-27"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/activity_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line" />
+
+</LinearLayout>

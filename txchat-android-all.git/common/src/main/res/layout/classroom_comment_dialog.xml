@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="260dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:paddingBottom="17dp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:text="我的评价"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+
+
+        <LinearLayout
+                android:id="@+id/xing_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_18"
+        >
+            <ImageView
+                    android:id="@+id/comment_dialog_xing_1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_xl_selector"
+            />
+            <ImageView
+                    android:id="@+id/comment_dialog_xing_2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_xl_selector"
+            />
+            <ImageView
+                    android:id="@+id/comment_dialog_xing_3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_xl_selector"
+            />
+            <ImageView
+                    android:id="@+id/comment_dialog_xing_4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_xl_selector"
+            />
+
+            <ImageView
+                    android:id="@+id/comment_dialog_xing_5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:visibility="visible"
+                    android:src="@drawable/xing_xl_selector"
+            />
+        </LinearLayout>
+
+
+        <TextView
+                android:id="@+id/comment_dialog_sorce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="良好"
+                android:textColor="@color/classroom_view1"
+                android:textSize="@dimen/sp_12"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/classroom_et_shape"
+            android:layout_marginTop="@dimen/dp_10"
+    >
+        <EditText
+                android:id="@+id/comment_dialog_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_7"
+                android:paddingRight="@dimen/dp_6"
+                android:paddingLeft="@dimen/dp_6"
+                android:hint="@string/classroom_comment_hient"
+                android:minHeight="120dp"
+                android:maxLength="500"
+                android:selectAllOnFocus="true"
+                android:textColorHint="@color/bg_base_dark"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+
+
+    </RelativeLayout>
+
+
+
+        <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/classroom_btn_shape"
+                android:text="@string/btn_ok"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+    </LinearLayout>

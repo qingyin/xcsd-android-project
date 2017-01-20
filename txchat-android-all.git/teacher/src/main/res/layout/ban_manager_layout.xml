@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+    <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <RadioButton
+                android:id="@+id/rb_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="聊天"
+                android:textColor="@drawable/selector_radiobutton_color"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg"/>
+
+        <RadioButton
+                android:id="@+id/rb_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="亲子圈"
+                android:textColor="@drawable/selector_radiobutton_color"
+                android:textSize="16sp"/>
+    </RadioGroup>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/bg"/>
+
+
+    <TextView
+            android:id="@+id/tv_ban_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="#89000000"
+            android:text="@string/hint_ban_chat"/>
+    <ScrollView
+            android:id="@+id/svContact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        <com.tuxing.app.view.MyGridView
+                android:id="@+id/gv_ban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#0000"
+                android:numColumns="4"
+                android:verticalSpacing="4dp"
+                />
+    </ScrollView>
+    <LinearLayout
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+</LinearLayout>

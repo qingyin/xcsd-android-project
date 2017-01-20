@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:orientation="vertical">
+    <include
+            android:id="@+id/base_titlebar"
+            layout="@layout/expert_qa_title_layout"/>
+
+
+    <!--<com.tuxing.app.view.IndicatorLayout-->
+            <!--xmlns:indicator="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/indicator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="0.5dp"-->
+            <!--android:layout_below="@+id/base_titlebar"-->
+            <!--indicator:cursor_color="@color/teacher_help_theme_color"-->
+            <!--indicator:cursor_height="2dp"-->
+            <!--indicator:tab_color_light="@color/teacher_help_theme_color"-->
+            <!--indicator:tab_color_normal="@color/black"-->
+            <!--android:background="@color/white"/>-->
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/expert_personal_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/base_titlebar"
+            android:background="@color/transparent"
+            />
+
+    <include layout="@layout/request_error_layout"/>
+
+</RelativeLayout>

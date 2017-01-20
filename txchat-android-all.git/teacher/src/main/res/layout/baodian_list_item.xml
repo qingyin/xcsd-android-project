@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            >
+        <RelativeLayout android:id="@+id/bao_dian_item_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="11dp"
+                >
+            <ImageView
+                    android:id="@+id/bao_dian_item_img"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    />
+
+            <ImageView android:id="@+id/bao_dian_video_img"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:scaleType="centerCrop"
+                       android:layout_centerInParent="true"
+                       android:background="@drawable/video_download_btn_nor"
+                       android:visibility="gone"
+                    />
+
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/bao_dian_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这里是问题的标题这里是问题的标题这里是问题的标题"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="9dp"
+                android:layout_alignTop="@+id/bao_dian_item_ll"
+                android:layout_toRightOf="@+id/bao_dian_item_ll"
+                />
+
+        <CheckBox
+                android:id="@+id/bao_dian_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:button="@drawable/like_bg_selector"
+                android:textColor="@color/expert_item_like"
+                android:textSize="9sp"
+                android:layout_alignTop="@+id/bao_dian_item_title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:enabled="false"
+                />
+
+
+        <TextView
+                android:id="@+id/bao_dian_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bao_dian_item_title"
+                android:layout_toRightOf="@+id/bao_dian_item_ll"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:lineSpacingExtra="3dp"
+                android:ellipsize="end"
+                android:text="这里是问题的答案，最多显示两行。这里是问题的答案，最多显示两行。这里是问题的答案，最多显示两行。"/>
+
+    </RelativeLayout>
+</LinearLayout>

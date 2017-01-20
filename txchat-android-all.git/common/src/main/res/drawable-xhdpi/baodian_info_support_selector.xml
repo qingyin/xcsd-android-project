@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/baodian_support_checked" android:state_checked="true"></item>
+    <item android:drawable="@drawable/baodian_support_enable" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/baodian_support_normal"></item>
+</selector>

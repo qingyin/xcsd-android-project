@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+ <!--    <ImageView
+        android:id="@+id/wivPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        /> -->
+    
+     <com.polites.android.GestureImageView
+        android:id="@+id/wivPhoto"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	gesture-image:min-scale="0.75"
+    	gesture-image:max-scale="5.0"/>
+
+    <LinearLayout
+        android:id="@+id/llLoading"
+        android:orientation="vertical"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:background="@drawable/progress_text_background"
+        android:layout_centerInParent="true" >
+    
+        <TextView android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="0%"
+            />
+        <TextView android:id="@+id/tvDownloadSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="0kb/0kb"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+<!--     <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:textColor="@color/tv_red"
+        >
+        
+    </TextView> -->
+
+</RelativeLayout>

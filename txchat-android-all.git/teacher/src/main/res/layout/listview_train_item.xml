@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="11dp" >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/sorrt_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar" />
+
+
+
+            <TextView
+                android:id="@+id/sorrt_item_name"
+                style="@style/text_setting_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/sorrt_icon"
+                android:textSize="@dimen/sp_15"
+                android:text="三年级二班" />
+
+            <TextView
+                android:id="@+id/sorrt_item_work"
+                style="@style/text_setting_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/sorrt_icon"
+                android:layout_alignParentBottom="true"
+                android:text="定制学能作业"
+                android:textSize="@dimen/sp_15"
+                />
+
+
+
+        <TextView
+            android:id="@+id/sorrt_item_time"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/sp_12"
+            android:text="2016-2-25" />
+
+        <TextView
+            android:id="@+id/sorrt_item_done"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/sp_12"
+            android:text="/34" />
+
+        <TextView
+            android:id="@+id/sorrt_item_dones"
+            style="@style/text_setting_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/sorrt_item_done"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/tv_red"
+            android:text="12" />
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/login_line"
+        ></View>
+
+
+
+</LinearLayout>

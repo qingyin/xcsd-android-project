@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--专家的简介-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_5"
+            android:background="@color/white">
+
+        <com.tuxing.app.view.ExpandTextView
+                android:id="@+id/expert_detailed_intro_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+
+               >
+        </com.tuxing.app.view.ExpandTextView>
+        <ImageView
+                android:id="@+id/expert_detailed_intro_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/expert_item_more"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/expert_detailed_more"
+                android:layout_below="@+id/expert_detailed_intro_content_layout"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/show_more_content"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+        />
+    </RelativeLayout>
+
+    <!--专家的回答-->
+    <RelativeLayout
+            android:id="@+id/expert_detailed_answer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@color/white">
+
+        <LinearLayout
+                android:id="@+id/expert_detailed_answer_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        >
+
+        </LinearLayout>
+        <TextView
+                android:id="@+id/expert_detailed_answer_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/expert_item_more"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/expert_detailed_more"
+                android:layout_below="@+id/expert_detailed_answer_content_layout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

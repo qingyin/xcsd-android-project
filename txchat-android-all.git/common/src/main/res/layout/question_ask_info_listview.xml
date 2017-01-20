@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <me.maxwin.view.XListView
+            xmlns:xlist="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question_info_ask_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/none"
+            android:divider="@null"
+            android:background="@color/white"
+            android:dividerHeight="0px"
+            android:listSelector="@drawable/item_message_bg"
+            android:scrollbars="none"
+            xlist:enableLoad="true"
+            xlist:enableRefresh="true" />
+</LinearLayout>

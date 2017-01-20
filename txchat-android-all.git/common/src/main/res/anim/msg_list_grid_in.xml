@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上下滑入式 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:fillEnabled="true" >
+
+
+    <!--<scale-->
+        <!--android:duration="150"-->
+        <!--android:fromXScale="0.0"-->
+        <!--android:fromYScale="1.0"-->
+        <!--android:toXScale="1.0"-->
+        <!--android:toYScale="1.0" />-->
+        <!-- 平移动画效果 从左到右  改变x轴坐标-->
+        <translate
+                android:fromXDelta="100%p"
+                android:toXDelta="0"
+                android:duration="150"
+                />
+
+
+</set>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/setting_item_height"
+    android:layout_marginTop="10dip"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <CheckBox
+        android:id="@+id/select_receiver_class_item_cb"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@drawable/check_box"
+        android:button="@null"
+        android:focusable="false" />
+
+    <com.tuxing.app.view.RoundImageView
+        android:id="@+id/select_receiver_class_item_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/select_receiver_class_item_cb"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/select_receiver_class_item_name"
+        style="@style/text_setting_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/select_receiver_class_item_icon"
+        android:paddingLeft="10dp"
+        android:text="超超" />
+
+    <ImageView
+        android:id="@+id/select_receiver_class_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="matrix"
+        android:src="@drawable/arrow_gray" />
+
+    <TextView
+        android:id="@+id/select_receiver_class_count"
+        style="@style/text_setting_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@id/select_receiver_class_item_arrow"
+        android:paddingLeft="10dp"
+        android:text="0"/>
+
+</RelativeLayout>

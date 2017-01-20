@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true"> <!-- 按压状态 -->
+        <shape>
+
+            <!-- <stroke android:color="@color/blue" android:width="1dp"/> 描绘视图边边框 -->
+            <solid android:color="@color/teacher_help_theme_color"/>
+
+            <corners android:bottomLeftRadius="4dp" android:bottomRightRadius="0dp" android:topLeftRadius="4dp"
+                     android:topRightRadius="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+
+            <stroke android:color="@color/teacher_help_theme_color" android:width="1dp"/> 描绘视图边框
+            <solid android:color="@color/white"/>
+
+            <corners android:bottomLeftRadius="4dp" android:bottomRightRadius="0dp" android:topLeftRadius="4dp"
+                     android:topRightRadius="0dp"/>
+        </shape>
+    </item>
+
+</selector>

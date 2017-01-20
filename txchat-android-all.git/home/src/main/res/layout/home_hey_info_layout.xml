@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@color/white"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/hey_info_send"
+                    style="@style/text_gray_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="喂药日期 : " />
+
+                <TextView
+                    android:id="@+id/hey_info_moth_day"
+                    style="@style/text_setting_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@id/hey_info_send" />
+
+                <TextView
+                    android:id="@+id/hey_info_week"
+                    style="@style/text_gray_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@id/hey_info_moth_day" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:background="@color/login_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                 android:padding="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/hey_info_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.tuxing.app.view.MyGridView
+                    android:id="@+id/hey_info_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/hey_info_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:verticalSpacing="5dp" />
+            </RelativeLayout>
+
+                <com.tuxing.app.view.MyListView
+                    android:id="@+id/hey_info_list"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@null"
+                    android:background="@color/white"
+                    android:scrollbars="@null" />
+                
+                 <TextView
+                    android:id="@+id/hey_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dip"
+                    android:text="老师还没有回复"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/qzq_name"
+                    android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

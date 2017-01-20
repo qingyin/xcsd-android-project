@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rlTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+        <LinearLayout
+                android:id="@+id/btnTitleLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_title_right_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/btn_back"
+                    android:textColor="@color/text_teacher"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/sp_14"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_back_title_t"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+
+        <Button
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_title_right_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:text="@string/cj_tecord"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14"
+                android:visibility="visible"/>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg"
+                />
+    </RelativeLayout>
+
+    <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bar_states">
+    </ProgressBar>
+
+    <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <RelativeLayout
+            android:id="@+id/iv_homepage_webview_error"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/hey_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/no_colour_bg"/>
+
+        <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hey_icon"
+                android:gravity="center"
+                android:text="服务连接错误"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/tv_1"
+                android:text="请检查你的网络"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15"/>
+    </RelativeLayout>
+
+</LinearLayout>

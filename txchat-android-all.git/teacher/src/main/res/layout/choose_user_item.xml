@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp">
+
+        <com.tuxing.app.view.RoundImageView
+                android:id="@+id/ivContactListItem"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@color/none">
+        </com.tuxing.app.view.RoundImageView>
+
+        <com.tuxing.app.view.RoundImageView
+                android:id="@+id/select"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignRight="@id/ivContactListItem"
+                android:background="@drawable/grid_checked_selected"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/tvContactListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:textColor="@color/tv_name"
+            android:textSize="14sp">
+    </TextView>
+
+</LinearLayout>

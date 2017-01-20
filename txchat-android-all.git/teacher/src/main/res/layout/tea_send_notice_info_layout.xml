@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/send_notice_info_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.tuxing.app.view.MyGridView
+                    android:id="@+id/send_notice_info_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/send_notice_info_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:verticalSpacing="5dp" />
+
+                <TextView
+                    android:id="@+id/send_notice_info_time"
+                    style="@style/text_gray_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/send_notice_info_grid"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <com.tuxing.app.view.MyListView
+                android:id="@+id/send_notice_info_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/bg"
+                android:dividerHeight="@dimen/dp_1"
+                android:paddingTop="10dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

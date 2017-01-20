@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tuxing.app.view.RequestErrorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/request_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    <ImageView
+            android:id="@+id/request_error_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_colour_bg"/>
+
+    <TextView
+            android:layout_marginTop="@dimen/dp_13"
+            android:id="@+id/request_error_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/request_error_image"
+            android:gravity="center"
+            android:textColor="@color/text_no_data"
+            android:textSize="@dimen/sp_16"/>
+
+</com.tuxing.app.view.RequestErrorLayout>

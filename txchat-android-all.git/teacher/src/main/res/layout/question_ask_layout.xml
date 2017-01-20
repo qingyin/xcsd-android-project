@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="10dp"
+               >
+
+                <EditText
+                    android:id="@+id/question_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_msg"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:minHeight="120dp"
+                    android:maxLength="500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:hint="填写回答内容"
+                    android:textColorHint="@color/question_replase"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                  android:id="@+id/rl_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/bg"
+                  android:visibility="gone"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加图片"
+                    android:textColor="@color/qzq_name"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv"
+                    android:text="(最多可添加9张图片)"
+                    android:textColor="@color/qzq_name"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+                <com.tuxing.app.view.MyGridView
+                    android:id="@+id/demand_icon_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:verticalSpacing="3dp"
+                    />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:scrollbars="none" >-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/my_rlUserInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_70"
+                android:background="@color/white"
+                android:clickable="true" >
+
+                <com.tuxing.app.view.RoundImageView
+                    android:id="@+id/my_user_head"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/default_avatar" />
+
+                <TextView
+                    android:id="@+id/my_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignTop="@id/my_user_head"
+                    android:layout_toRightOf="@+id/my_user_head"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/my_user_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/my_user_name"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/my_user_head"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <ImageView
+                    android:id="@+id/ivArrowSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/arrow_gray" />
+                <ImageView
+                        android:id="@+id/iv_wipe"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_toLeftOf="@+id/ivArrowSetting"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/ic_wipe"
+                        android:visibility="gone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/my_invatation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dip" >
+
+                    <com.tuxing.app.view.RoundImageView
+                        android:id="@+id/my_invatation_icon"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/invatation_icon" />
+
+                    <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/my_invatation_icon"
+                        android:text="@string/invatation_man" />
+
+                    <ImageView
+                        android:id="@+id/iv_invatation_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/login_line" />
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/my_cloudcard_number"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="@dimen/dp_44"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingRight="10dp" >-->
+
+                    <!--<com.tuxing.app.view.RoundImageView-->
+                        <!--android:id="@+id/my_cloudcard_number_icon"-->
+                        <!--android:layout_width="@dimen/dp_30"-->
+                        <!--android:layout_height="@dimen/dp_30"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:src="@drawable/cloudcard_number_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/text_setting_black"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@id/my_cloudcard_number_icon"-->
+                        <!--android:text="@string/cloudcard_number" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:scaleType="matrix"-->
+                        <!--android:src="@drawable/arrow_gray" />-->
+                <!--</RelativeLayout>-->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/login_line" />
+
+                <RelativeLayout
+                    android:id="@+id/my_baby_wuyou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp" >
+
+                    <com.tuxing.app.view.RoundImageView
+                        android:id="@+id/my_baby_wuyou_icon"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/baby_wuyou_icon" />
+
+                    <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/my_baby_wuyou_icon"
+                        android:text="@string/baby_wuyou" />
+
+                    <ImageView
+                        android:id="@+id/iv_my_baby_wuyou_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_favorite"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <com.tuxing.app.view.RoundImageView
+                    android:id="@+id/my_favorite_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/favorite_icon" />
+
+                <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/my_favorite_icon"
+                    android:text="@string/my_favorite" />
+
+                <ImageView
+                    android:id="@+id/iv_my_favorite_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/arrow_gray" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/my_account_asfety"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp" >
+
+                    <com.tuxing.app.view.RoundImageView
+                        android:id="@+id/my_account_asfety_icon"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/account_asfety_icon" />
+
+                    <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/my_account_asfety_icon"
+                        android:text="@string/account_safety" />
+
+                    <ImageView
+                        android:id="@+id/iv_my_account_asfety_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/login_line" />
+
+                <RelativeLayout
+                    android:id="@+id/my_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp" >
+
+                    <com.tuxing.app.view.RoundImageView
+                        android:id="@+id/my_help_icon"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/help_icon" />
+
+                    <TextView
+                        style="@style/text_setting_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/my_help_icon"
+                        android:text="@string/help_feedback" />
+
+                    <ImageView
+                        android:id="@+id/iv_my_help_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/arrow_gray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_set"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp" >
+
+                <com.tuxing.app.view.RoundImageView
+                    android:id="@+id/my_set_icon"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_icon" />
+
+                <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/my_set_icon"
+                    android:text="@string/tab_setting" />
+
+                <ImageView
+                    android:id="@+id/iv_my_set_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/arrow_gray" />
+            </RelativeLayout>
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ExpandableListView
+            android:id="@+id/manager_parent_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@color/none"
+            android:childDivider="@color/bg"
+            android:choiceMode="singleChoice"
+            android:divider="@color/lv_msg_divier"
+            android:dividerHeight="1px"
+            android:groupIndicator="@null"
+            android:scrollbars="none" />
+
+        <com.xcsd.app.teacher.util.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</LinearLayout>

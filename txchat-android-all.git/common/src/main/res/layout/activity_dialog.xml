@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_25"
+              android:layout_marginLeft="@dimen/dp_25"
+              android:layout_marginRight="@dimen/dp_25"
+              android:background="@drawable/dialog_bg">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:gravity="center"
+            android:text="@string/media_flow_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/media_flow_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"/>
+
+    <Button
+            android:id="@+id/media_flow_all"
+            style="@style/btn_black_dialog"
+            android:layout_width="fill_parent"
+            android:text="@string/media_flow_all"
+            android:background="@drawable/shape_chat_edit_border"
+            android:layout_marginTop="5dp"
+            />
+
+    <Button
+            android:id="@+id/media_flow_cancle"
+            style="@style/btn_black_dialog"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/educ_video_dialog_shape"
+            android:text="@string/update_cancel"
+            />
+
+</LinearLayout>

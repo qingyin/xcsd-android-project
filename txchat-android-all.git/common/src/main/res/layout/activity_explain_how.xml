@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/test_back_img_layout"
+                android:layout_width="25dip"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/test_back_img"
+                    android:layout_width="12dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_left_p" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/test_back_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/test_back_img_layout"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/text_parent"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="【学习能力】"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title_right_selector"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="布置"
+            android:textColor="@color/text_teacher"
+            android:textSize="@dimen/dp_14"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_error_item"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/error_item_color"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_neterror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/login_error_icon" />
+
+                <TextView
+                    android:id="@+id/tv_connect_errormsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_neterror"
+                    android:text="您的网络不给力，请检查一下网络"
+                    android:textColor="#000" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_explain_how"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_20"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_neterror"
+                android:lineSpacingExtra="@dimen/dp_14"
+                android:lineSpacingMultiplier="0.8"
+                android:text="     乐学堂致力于通过游戏训练的方式提升孩子的学习能力，学习能力是指人们在正式学习环境下使用到的各项认知能力。即当一个孩子的学习能力提高了，相应的他的学习成绩也会有显著提高。学习能力存在显著的关键发展期，在幼儿园和小学阶段，学习能力的提升速度最快，美国哈弗大学研究表明，后天的体系化训练，能够帮助孩子提高学习能力，并且随着学习能力的提高，孩子的学习方法也会相应得到改善。"
+                android:textColor="#484848"
+                android:textSize="@dimen/sp_14" />
+
+
+            <LinearLayout
+                android:id="@+id/lists"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/rl_error_item"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.fortysevendeg.swipelistview.SwipeListView xmlns:swipe="http://schemas.android.com/apk/res-auto"
+                    xmlns:xlist="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/home_acticity_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bg"
+                    android:cacheColorHint="@color/none"
+                    android:divider="@null"
+                    android:dividerHeight="0px"
+                    android:listSelector="@color/none"
+                    android:scrollbars="@null"
+                    swipe:swipeActionLeft="reveal"
+                    swipe:swipeActionRight="reveal"
+                    swipe:swipeAnimationTime="300"
+                    swipe:swipeBackView="@+id/delete"
+                    swipe:swipeCloseAllItemsWhenMoveList="true"
+                    swipe:swipeFrontView="@+id/rl"
+                    swipe:swipeMode="none"
+                    swipe:swipeOffsetLeft="310dip"
+                    swipe:swipeOffsetRight="200dip"
+                    swipe:swipeOpenOnLongPress="false"
+                    xlist:enableLoad="true"
+                    xlist:enableRefresh="true" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/activity_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/hey_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/no_colour_bg" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hey_icon"
+                    android:gravity="center"
+                    android:text="暂无信息"
+                    android:textColor="@color/yws_black"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

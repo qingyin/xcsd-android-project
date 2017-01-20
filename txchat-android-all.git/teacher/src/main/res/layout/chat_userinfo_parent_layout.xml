@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:background="@drawable/my_profile_bg"
+                android:clickable="true"
+                android:gravity="center_vertical">
+
+            <com.tuxing.app.view.RoundImageView
+                    android:id="@+id/userinfo_parent_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/default_info_image"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/user_phone"/>
+
+            <TextView
+                    android:id="@+id/userinfo_phone"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:text="ddddddddddd"
+                    android:gravity="center_vertical|right"
+                    android:lines="2"/>
+        </LinearLayout>
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/bg"/>
+        <LinearLayout
+                android:id="@+id/ll_bb_sex"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <TextView
+                    android:id="@+id/six_name"
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="孩子性别"/>
+
+            <TextView
+                    android:id="@+id/userinfo_sex"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                   android:text="ddddddddddd"
+                    android:gravity="center_vertical|right"
+                    android:lines="2"/>
+        </LinearLayout>
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/bg"/>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <TextView
+                    android:id="@+id/class_name"
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/user_class"/>
+
+            <TextView
+                    android:id="@+id/userinfo_class"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                   android:text="ddddddddddd"
+                    android:gravity="center_vertical|right"
+                    android:lines="1"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/bg"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <TextView
+                    style="@style/text_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/user_school"/>
+
+            <TextView
+                    android:id="@+id/userinfo_school"
+                    style="@style/text_gray_14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                   android:text="ddddddddddd"
+                    android:gravity="center_vertical|right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/bottom_parent_send_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/straight_corner"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+            <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_call"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="@string/btn_call"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"/>
+        </LinearLayout>
+        <View android:layout_width="@dimen/dp_1"
+              android:id="@+id/line"
+              android:layout_height="match_parent"
+              android:background="@color/white"></View>
+
+        <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+            <TextView
+                    android:id="@+id/tv_send_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_message"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="@string/btn_send_msg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

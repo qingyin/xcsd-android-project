@@ -1,0 +1,1036 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/test_back_img_layout"
+                android:layout_width="25dip"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/test_back_img"
+                    android:layout_width="12dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_left_p" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/test_back_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/test_back_img_layout"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/text_parent"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="小球的学能成绩"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="权威解释"
+            android:textColor="@color/text_parent"
+            android:textSize="@dimen/dp_14"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg" />
+    </RelativeLayout>
+
+    <com.tuxing.app.view.NewScrollView
+        android:id="@+id/NewScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:id="@+id/tvTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/dialog_bg">
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:maxEms="10"
+                    android:text="学能等级  "
+                    android:textColor="@color/txt_bg"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:drawableRight="@drawable/lc_question_white"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="通过作业和学能测试评估"
+                    android:textColor="@color/txt_bg"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp">
+
+                <com.tuxing.app.Radar.RadarView
+                    android:id="@+id/radarview"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_45"
+                    android:layout_marginRight="@dimen/dp_45"
+                    android:layout_marginTop="@dimen/dp_34"
+                    android:rotation="-18" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_2">
+
+                    <TextView
+                        android:id="@+id/tv_space"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxEms="10"
+                        android:text="0"
+                        android:textColor="#ff6f84"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_space_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_space"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:text="空间思维"
+                        android:textColor="#ff6f84"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_26"
+                    android:layout_marginTop="120dp">
+
+                    <TextView
+                        android:id="@+id/tv_logic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxEms="10"
+                        android:text="0"
+                        android:textColor="#9a93f3"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_logic_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_logic"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:text="逻辑力"
+                        android:textColor="#9a93f3"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_26"
+                    android:layout_marginTop="124dp">
+
+                    <TextView
+                        android:id="@+id/tv_response"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxEms="10"
+                        android:text="0"
+                        android:textColor="#ffc24b"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_response_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_response"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:text="反应力"
+                        android:textColor="#ffc24b"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_70">
+
+                    <TextView
+                        android:id="@+id/tv_attention_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxEms="10"
+                        android:text="0"
+                        android:textColor="#84bef0"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_attention_name"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:text="注意力"
+                        android:textColor="#84bef0"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_70">
+
+                    <TextView
+                        android:id="@+id/tv_memory_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxEms="10"
+                        android:text="0"
+                        android:textColor="#82d04d"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_memory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_memory_name"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:text="记忆力"
+                        android:textColor="#82d04d"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/dp_60"
+                    android:layout_marginRight="@dimen/dp_20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lc_point_01"
+                        android:maxEms="10"
+                        android:text="你的等级"
+                        android:textColor="@color/gray"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tip_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_tip"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@drawable/lc_point_02"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:text="平均等级"
+                        android:textColor="@color/gray"
+                        android:textSize="8sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_your_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="你的学能总成绩为：0"
+                android:textColor="#919191"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_your_score_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="超过了所在年级学生的百分比"
+                android:textColor="#5c5c5c"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout
+                android:id="@+id/ll_chick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_two"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcSecondaryProgress="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="学能总成绩"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="46dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_space"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcSecondaryProgress="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_space_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="空间思维"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_space_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="46dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_response"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcSecondaryProgress="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_response_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="反应力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_response_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="46dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_memory"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcSecondaryProgress="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_memory_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="记忆力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_memory_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="46dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_attention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_attention"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcSecondaryProgress="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_attention_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="注意力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_attention_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="46dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_logic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_logic"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcSecondaryProgress="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_logic_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="逻辑力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_logic_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="46dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tvTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_22"
+                android:background="@drawable/dialog_bg">
+
+                <TextView
+                    android:id="@+id/tvTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:gravity="center_vertical"
+                    android:maxEms="10"
+                    android:text="学能通关积分  "
+                    android:textColor="@color/txt_bg"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:drawableRight="@drawable/lc_question_white"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="通过游戏大厅通关获得"
+                    android:textColor="@color/txt_bg"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ll_space_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_space_score"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcProgressColor="@color/custom_progress_orange_progress"
+                    app:rcSecondaryProgress="86"
+                    app:rcSecondaryProgressColor="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_space_left_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="空间思维"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_space_right_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="80dp"
+                    android:text="22/300"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_space_right_score_arraw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:drawableLeft="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_response_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_response_score"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcProgressColor="@color/custom_progress_orange_progress"
+                    app:rcSecondaryProgress="86"
+                    app:rcSecondaryProgressColor="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_response_left_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="反应力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_response_right_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="80dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_response_right_score_arraw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:drawableLeft="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_memory_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_memory_score"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcProgressColor="@color/custom_progress_orange_progress"
+                    app:rcSecondaryProgress="86"
+                    app:rcSecondaryProgressColor="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_memory_left_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="记忆力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_memory_right_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="80dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_memory_right_score_arraw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:drawableLeft="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_attention_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_attention_score"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcProgressColor="@color/custom_progress_orange_progress"
+                    app:rcSecondaryProgress="86"
+                    app:rcSecondaryProgressColor="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_attention_left_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="注意力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_attention_right_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="80dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_attention_right_score_arraw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:drawableLeft="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_logic_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.tuxing.app.Radar.RoundCornerProgressBar
+                    android:id="@+id/progress_logic_score"
+                    app:rcMax="100"
+                    app:rcProgress="0"
+                    app:rcProgressColor="@color/custom_progress_orange_progress"
+                    app:rcSecondaryProgress="86"
+                    app:rcSecondaryProgressColor="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/tv_logic_left_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="逻辑力"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_logic_right_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="80dp"
+                    android:text="30%"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_logic_right_score_arraw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:drawableLeft="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tvTitle5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/dialog_bg">
+
+                <TextView
+                    android:id="@+id/tvTitle6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:maxEms="10"
+                    android:text="学能商数  "
+                    android:textColor="@color/txt_bg"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:drawableRight="@drawable/lc_question_white"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxEms="10"
+                    android:text="通过学能测试获得"
+                    android:textColor="@color/txt_bg"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/image_score_show"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:src="@drawable/lc_level" />
+
+                <TextView
+                    android:id="@+id/tvTitle_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:maxEms="10"
+                    android:text="0"
+                    android:textColor="@color/black5"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tvTitle_number_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_85"
+                    android:maxEms="10"
+                    android:text="0"
+                    android:textColor="@color/gray_line"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTitle_number_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/image_score_show"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:maxEms="10"
+                    android:text="你的学能商数"
+                    android:textColor="#919191"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <com.tuxing.app.Radar.LineView
+                android:id="@+id/line"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/gray_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/white">
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_margin="@dimen/dp_20"></lecho.lib.hellocharts.view.LineChartView>
+
+                <ImageView
+                    android:id="@+id/image_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/white"
+                    android:src="@drawable/lc_arrow_up" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="226dp"
+                    android:background="@color/white"
+                    android:src="@drawable/lc_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_score_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:maxEms="10"
+                    android:text="得分"
+                    android:textColor="@color/gray_line"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_score_tips_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="260dp"
+                    android:maxEms="10"
+                    android:text="测试次数"
+                    android:textColor="@color/gray_line"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_26"
+                >
+
+
+                <Button
+                    android:id="@+id/bt_start_work"
+                    style="@style/text_setting_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_bottom_red_bg_selector"
+                    android:gravity="center"
+                    android:text="开始学能测试"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </com.tuxing.app.view.NewScrollView>
+</LinearLayout>

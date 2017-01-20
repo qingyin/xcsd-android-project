@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:id="@+id/root_view"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+          android:paddingBottom="10dp"
+          android:paddingTop="10dp"
+          android:paddingRight="10dp"
+        >
+
+        <com.tuxing.app.view.RoundImageView
+            android:id="@+id/leader_mailbox_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/default_avatar" />
+
+        
+        <ImageView
+            android:id="@+id/leader_mailbox_isnew"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignTop="@+id/leader_mailbox_icon"
+            android:layout_marginLeft="-12dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/leader_mailbox_icon"
+            android:src="@drawable/unread_count_bg" />
+
+        <LinearLayout
+            android:id="@+id/llNameContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/leader_mailbox_icon"
+            android:orientation="vertical"
+            android:paddingLeft="10dip" >
+
+            <TextView
+                android:id="@+id/leader_mailbox_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               style="@style/text_setting_black" />
+
+            <TextView
+                android:id="@+id/leader_mailbox_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              style="@style/text_gray_12"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/leader_mailbox_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            style="@style/text_gray_10" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/leader_mailbox_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_below="@id/rl_notice"
+        android:background="@color/login_line" />
+
+</RelativeLayout>

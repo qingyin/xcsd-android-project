@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/no_colour_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dip"
+            android:text="@string/net_not_connect"
+            android:textColor="@color/black8"
+            android:textSize="17dip" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:text="@string/check_net_and_refresh"
+            android:textColor="@color/grey37"
+            android:textSize="12dip" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/empty_page_btn"
+            android:layout_width="108dip"
+            android:layout_height="40dip"
+            android:layout_marginBottom="100dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dip"
+            android:background="@drawable/corner_refresh_btn_bg"
+            android:text="@string/refresh"
+            android:textColor="@drawable/btn_white_txt_font"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</RelativeLayout>

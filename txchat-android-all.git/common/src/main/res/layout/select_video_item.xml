@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        >
+
+
+    <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+    />
+
+    <RelativeLayout 
+        android:id="@+id/rl_desc"
+         android:layout_width="90dp"
+         android:layout_height="17dp"
+          android:layout_alignLeft="@id/image_iv"
+          android:layout_alignRight="@id/image_iv"
+          android:layout_alignBottom="@id/image_iv"
+         >
+         
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/qzq_title_black"
+            android:alpha="0.7"
+            />
+    <ImageView 
+        android:id="@+id/iv_conlver"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/select_video_icon"
+        />
+    
+     <TextView 
+         android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+         android:text="10:10"
+         android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            
+            />
+     </RelativeLayout>
+    <ImageView
+        android:id="@+id/image_iv_bg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/shap_select_video_bg"
+        />
+    <TextView
+        android:id="@+id/iv_alpha"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/qzq_title_black"
+        android:alpha="0.4"
+        />
+
+   
+</RelativeLayout>

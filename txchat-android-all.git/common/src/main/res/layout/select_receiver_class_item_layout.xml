@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/setting_item_height"
+    android:layout_marginTop="10dip"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+   >
+    
+    <com.tuxing.app.view.RoundImageView
+        android:id="@+id/select_receiver_class_item_icon"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_default_class" />
+
+    <TextView
+        android:id="@+id/select_receiver_class_item_name"
+        style="@style/text_setting_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/select_receiver_class_item_icon"
+        android:paddingLeft="10dp"
+        android:text="超超" />
+
+
+        <ImageView
+            android:id="@+id/select_receiver_class_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+            android:scaleType="matrix"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow_gray"
+                android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/select_receiver_class_item_cb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_check_box_normal"
+            />
+
+</RelativeLayout>

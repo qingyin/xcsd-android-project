@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tuxing.app.qzq.view.MessageLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <com.tuxing.app.view.RoundImageView
+                        android:id="@+id/iv_portrait"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/default_avatar" >
+                    </com.tuxing.app.view.RoundImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="8.6"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_portrait"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="6dp"
+                        android:singleLine="true"
+                        android:textColor="@color/qzq_name"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/ctv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left"
+                        android:minHeight="@dimen/dp_20"
+                        android:textSize="@dimen/sp_14" >
+                    </TextView>
+
+                    <com.tuxing.app.view.MyGridView
+                        android:id="@+id/gv_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:horizontalSpacing="3dp"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="3dp"
+                        android:visibility="gone" >
+                    </com.tuxing.app.view.MyGridView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="10分钟前"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/tv_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="删除"
+                            android:textColor="@color/qzq_name"
+                            android:textSize="@dimen/sp_12" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_pop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/iv_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/qzq_msg_select" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_friend_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:src="@drawable/friend_arrow" >
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/root_piarse_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/qzq_comment_bg"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <com.tuxing.app.view.MyImageView
+                        android:id="@+id/piarse_icon"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:src="@drawable/qzq_info_zan" >
+                    </com.tuxing.app.view.MyImageView>
+
+                    <com.tuxing.app.view.AoutLineLinearLayout
+                        android:id="@+id/piarse_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/qzq_comment_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </com.tuxing.app.view.AoutLineLinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/piarse_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/qzq_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_leaveMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/qzq_comment_bg"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.tuxing.app.qzq.view.MessageLinearLayout>

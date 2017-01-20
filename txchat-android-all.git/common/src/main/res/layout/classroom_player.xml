@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/classroom_player_header" />
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.tuxing.app.view.IndicatorLayout xmlns:indicator="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/classroom_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            indicator:cursor_color="@color/teacher_help_theme_color"
+            indicator:cursor_height="2dp"
+            indicator:cursor_width="150px"
+            indicator:tab_color_light="@color/teacher_help_theme_color"
+            indicator:tab_color_normal="@color/black" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_below="@id/classroom_indicator"
+            android:background="@color/qzq_gray" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/classroom_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view"
+            android:background="@color/transparent" />
+
+
+    </RelativeLayout>
+</LinearLayout>

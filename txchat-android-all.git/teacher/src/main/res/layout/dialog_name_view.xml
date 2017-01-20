@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/btn_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/name_bt_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector"
+                android:text="@string/btn_ok"
+                android:textColor="@color/text_dark" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/bg" />
+
+            <Button
+                android:id="@+id/name_bt_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/text_dark" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/btn_ll"
+            android:layout_marginTop="20dp"
+            android:background="@color/bg" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_ll"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="输入姓名 限制15个字符"
+            android:maxLength="15"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/dp_14" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>

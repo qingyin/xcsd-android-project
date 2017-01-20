@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/dp_30"
+              android:background="@color/share_dialog_bg"
+              android:fitsSystemWindows="true"
+>
+    <!-- 朋友圈、微信好友、QQ 好友、复制链接-->
+    <LinearLayout
+            android:id="@+id/share_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingRight="@dimen/dp_25"
+    >
+
+        <LinearLayout
+                android:id="@+id/ly_share_weichat_circle"
+                style="@style/dialog_content_share_ll">
+            <ImageView android:id="@+id/weichat_circle_img"
+                       style="@style/dialog_content_share_image"
+                       android:src="@drawable/share_icon_wechatfriends_selector"
+            />
+            <TextView
+                    style="@style/dialog_content_share_text"
+                    android:text="@string/platform_weichat_circle"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ly_share_weichat"
+                style="@style/dialog_content_share_ll">
+            <ImageView style="@style/dialog_content_share_image"
+                       android:src="@drawable/share_icon_wechat_selector"
+            />
+            <TextView
+                    style="@style/dialog_content_share_text"
+                    android:text="@string/platform_weichat"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ly_share_sina_weibo"
+                style="@style/dialog_content_share_ll"
+                android:visibility="gone">
+            <ImageView style="@style/dialog_content_share_image"
+                       android:src="@drawable/share_icon_sinaweibo_selector"
+            />
+            <TextView
+                    style="@style/dialog_content_share_text"
+                    android:text="@string/platform_sina"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/ly_share_qq"
+                style="@style/dialog_content_share_ll">
+            <ImageView style="@style/dialog_content_share_image"
+                       android:src="@drawable/share_icon_qq_selector"
+            />
+            <TextView
+                    style="@style/dialog_content_share_text"
+                    android:text="@string/platform_qq"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/ly_share_copy_link"
+                style="@style/dialog_content_share_ll">
+            <ImageView style="@style/dialog_content_share_image"
+                       android:src="@drawable/share_icon_copy_link_selector"
+            />
+            <TextView
+                    style="@style/dialog_content_share_text"
+                    android:text="@string/platform_copy_link"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View android:id="@+id/line_view"
+          android:layout_width="fill_parent"
+          android:layout_height="@dimen/dp_0.5"
+          android:layout_marginTop="@dimen/dp_29"
+          android:layout_marginLeft="@dimen/dp_30"
+          android:background="@color/umeng_socialize_edit_bg"
+    />
+
+    <!-- 编辑、保存到手机、重新加载、删除、浏览器打开-->
+    <LinearLayout
+            android:id="@+id/function_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingRight="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_14"
+    >
+        <LinearLayout
+                android:id="@+id/ll1"
+                style="@style/dialog_content_share_ll"
+                android:visibility="invisible"
+        >
+            <ImageView
+                    android:id="@+id/iv1"
+                    style="@style/dialog_content_share_image"
+            />
+            <TextView
+                    android:id="@+id/tv1"
+                    style="@style/dialog_content_share_text"
+                   />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll2"
+                style="@style/dialog_content_share_ll"
+                android:visibility="invisible">
+            <ImageView
+                    android:id="@+id/iv2"
+                    style="@style/dialog_content_share_image"
+            />
+            <TextView
+                    android:id="@+id/tv2"
+                    style="@style/dialog_content_share_text"
+                   />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll3"
+                style="@style/dialog_content_share_ll"
+                android:visibility="invisible">
+            <ImageView
+                    android:id="@+id/iv3"
+                    style="@style/dialog_content_share_image"
+            />
+            <TextView
+                    android:id="@+id/tv3"
+                    style="@style/dialog_content_share_text"
+                   />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll4"
+                style="@style/dialog_content_share_ll"
+                android:visibility="invisible"
+        >
+            <ImageView
+                    android:id="@+id/iv4"
+                    style="@style/dialog_content_share_image"
+            />
+            <TextView
+                    android:id="@+id/tv4"
+                    style="@style/dialog_content_share_text"
+                   />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView android:id="@+id/cancel_tv"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:text="@string/cancel"
+              android:textSize="@dimen/sp_18"
+              android:textColor="@color/share_dialog_cancel_text"
+              android:gravity="center"
+              android:background="@color/share_dialog_cancel_text_bg"
+              android:layout_marginTop="@dimen/dp_29"
+    />
+</LinearLayout>

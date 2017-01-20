@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+    <string-array name="message_list_options">
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="text_menu_option">
+        <item>复制消息</item>
+    </string-array>
+    <string-array name="text_revoke_option">
+        <item>复制消息</item>
+        <item>撤回消息</item>
+    </string-array>
+    <string-array name="text_only_revoke_option">
+        <item>撤回消息</item>
+    </string-array>
+    <string-array name="text_menu_option_retry">
+        <item>重发消息</item>
+    </string-array>
+    <string-array name="message_menu_option">
+        <item>确认删除</item>
+    </string-array>
+    <string-array name="comment_menu_option">
+        <item>删除评论</item>
+    </string-array>
+    <string-array name="remove_menu_option">
+        <item>解除关系</item>
+    </string-array>
+    
+    <string-array name="folks_menu_option">
+        <item>爸爸</item>
+        <item>妈妈</item>
+        <item>爷爷</item>
+        <item>奶奶</item>
+        <item>姥爷</item>
+        <item>姥姥</item>
+        <item>亲属</item>
+    </string-array>
+    <integer-array name="folks_menu_option_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>100</item>
+    </integer-array>
+    <string-array name="newwork_option">
+        <item>(内网)192.168.10.115</item>
+        <item>(外网测试)123.57.43.111</item>
+        <item>(正式)api.tx2010.com</item>
+    </string-array>
+
+</resources>

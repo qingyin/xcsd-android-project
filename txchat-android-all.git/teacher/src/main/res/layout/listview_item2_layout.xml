@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/setting_item_height"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+     android:paddingBottom="5dp"
+        android:paddingTop="5dip"
+     >
+
+    <TextView
+        android:id="@+id/item2_name"
+        style="@style/text_setting_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="超超" />
+
+    <com.tuxing.app.view.RoundImageView
+        android:id="@+id/item2_icon"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_avatar" />
+
+</RelativeLayout>

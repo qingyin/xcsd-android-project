@@ -1,0 +1,281 @@
+[
+  {
+    "level_id": 0,
+    "level_round_num": 2,
+    "all_fish_num": "[1,1]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 50,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 1,
+    "level_round_num": 5,
+    "all_fish_num": "[2]",
+    "all_fish_color": "[2]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 2,
+    "level_round_num": 5,
+    "all_fish_num": "[2]",
+    "all_fish_color": "[1]",
+    "fish_speed": 100,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 3,
+    "level_round_num": 5,
+    "all_fish_num": "[3]",
+    "all_fish_color": "[3]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 4,
+    "level_round_num": 5,
+    "all_fish_num": "[4]",
+    "all_fish_color": "[3]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 5,
+    "level_round_num": 5,
+    "all_fish_num": "[3]",
+    "all_fish_color": "[1]",
+    "fish_speed": 100,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 6,
+    "level_round_num": 5,
+    "all_fish_num": "[5]",
+    "all_fish_color": "[2]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 7,
+    "level_round_num": 5,
+    "all_fish_num": "[4]",
+    "all_fish_color": "[3]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 8,
+    "level_round_num": 5,
+    "all_fish_num": "[6]",
+    "all_fish_color": "[1]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 9,
+    "level_round_num": 5,
+    "all_fish_num": "[5]",
+    "all_fish_color": "[2]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 10,
+    "level_round_num": 5,
+    "all_fish_num": "[7]",
+    "all_fish_color": "[3]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 11,
+    "level_round_num": 5,
+    "all_fish_num": "[6]",
+    "all_fish_color": "[1]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 12,
+    "level_round_num": 5,
+    "all_fish_num": "[8]",
+    "all_fish_color": "[2]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 13,
+    "level_round_num": 5,
+    "all_fish_num": "[5,5]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 50,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 14,
+    "level_round_num": 5,
+    "all_fish_num": "[5,5]",
+    "all_fish_color": "[2,3]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 15,
+    "level_round_num": 5,
+    "all_fish_num": "[6,6]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 16,
+    "level_round_num": 5,
+    "all_fish_num": "[5,5,5]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 50,
+    "feed_interval_time": 2,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 17,
+    "level_round_num": 5,
+    "all_fish_num": "[5,5,5]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 80,
+    "feed_interval_time": 3,
+    "food_sort_type": 1
+  },
+  {
+    "level_id": 18,
+    "level_round_num": 5,
+    "all_fish_num": "[3,3]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 50,
+    "feed_interval_time": 2,
+    "food_sort_type": 3
+  },
+  {
+    "level_id": 19,
+    "level_round_num": 5,
+    "all_fish_num": "[3,3]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 3
+  },
+  {
+    "level_id": 20,
+    "level_round_num": 5,
+    "all_fish_num": "[4,4]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 50,
+    "feed_interval_time": 2,
+    "food_sort_type": 3
+  },
+  {
+    "level_id": 21,
+    "level_round_num": 5,
+    "all_fish_num": "[4,4]",
+    "all_fish_color": "[2,3]",
+    "fish_speed": 80,
+    "feed_interval_time": 3,
+    "food_sort_type": 3
+  },
+  {
+    "level_id": 22,
+    "level_round_num": 5,
+    "all_fish_num": "[2,2,2]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 80,
+    "feed_interval_time": 3,
+    "food_sort_type": 3
+  },
+  {
+    "level_id": 23,
+    "level_round_num": 5,
+    "all_fish_num": "[3,3,3]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 50,
+    "feed_interval_time": 1,
+    "food_sort_type": 3
+  },
+  {
+    "level_id": 24,
+    "level_round_num": 5,
+    "all_fish_num": "[3,3]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 80,
+    "feed_interval_time": 3,
+    "food_sort_type": 2
+  },
+  {
+    "level_id": 25,
+    "level_round_num": 5,
+    "all_fish_num": "[3,4]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 80,
+    "feed_interval_time": 3,
+    "food_sort_type": 2
+  },
+  {
+    "level_id": 26,
+    "level_round_num": 5,
+    "all_fish_num": "[4,4]",
+    "all_fish_color": "[1,2]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 2
+  },
+  {
+    "level_id": 27,
+    "level_round_num": 5,
+    "all_fish_num": "[2,2,2]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 100,
+    "feed_interval_time": 3,
+    "food_sort_type": 2
+  },
+  {
+    "level_id": 28,
+    "level_round_num": 5,
+    "all_fish_num": "[3,3,3]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 50,
+    "feed_interval_time": 2,
+    "food_sort_type": 2
+  },
+  {
+    "level_id": 29,
+    "level_round_num": 5,
+    "all_fish_num": "[3,3,3]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 80,
+    "feed_interval_time": 1,
+    "food_sort_type": 2
+  },
+  {
+    "level_id": 30,
+    "level_round_num": 5,
+    "all_fish_num": "[4,4,4]",
+    "all_fish_color": "[1,2,3]",
+    "fish_speed": 80,
+    "feed_interval_time": 2,
+    "food_sort_type": 2
+  }
+]

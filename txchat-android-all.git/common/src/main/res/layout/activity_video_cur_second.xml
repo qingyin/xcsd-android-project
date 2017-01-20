@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pic_view_bg_color" >
+
+    <HorizontalScrollView
+            android:id="@+id/scroll_hor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:orientation="horizontal" >
+        <RelativeLayout
+                android:id="@+id/scroll_hor_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        >
+            <VideoView
+                    android:id="@+id/scroll_hor_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+
+            />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <com.tuxing.app.view.ScrollListenerView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:orientation="horizontal" >
+        <RelativeLayout
+                android:id="@+id/scroll_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        >
+            <VideoView
+                    android:id="@+id/scroll_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+
+            />
+
+        </RelativeLayout>
+    </com.tuxing.app.view.ScrollListenerView>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+        <ImageView
+                android:id="@+id/video_new_cut_img_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/select_video_pause" />
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000"
+    />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_receive"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+
+        <com.tuxing.app.qzq.view.MyRecyclerView
+            android:id="@+id/recyclerview_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/video_new_cut_relative1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <Button
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/seekbar_left" />
+
+                <Button
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/seekbar_right" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/video_new_cut_txt_left"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/video_new_cut_txt_right"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/video_new_cut_img_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:saveEnabled="false"
+            android:background="@color/black_70" />
+
+        <ImageView
+            android:id="@+id/video_new_cut_img_right"
+            android:layout_width="0dp"
+            android:focusable="false"
+            android:saveEnabled="false"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_70" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/seekbar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:focusable="false"
+            android:visibility="gone"
+            android:background="@drawable/seek_pross_icon"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_video_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:drawablePadding="5dp"
+        android:textColor="@color/cut_video_msg"
+        android:layout_centerHorizontal="true"
+      />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl_receive"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/video_new_cut_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/video_cut_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+            android:id="@+id/rl_time"
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:layout_below="@id/rl_receive"
+        android:layout_marginTop="26dp"
+        >
+
+
+        <TextView
+            android:id="@+id/video_new_cut_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="@color/cut_video_msg"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            />
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/cut_video_msg"
+                android:layout_centerHorizontal="true"
+                android:text="左右滑动缩略图裁剪视频,最长截取30秒"
+        />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+            android:id="@+id/rl_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/qzq_title_black">
+
+        <TextView
+                android:id="@+id/tv_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="2dp"
+                android:background="@null"
+                android:text="取消"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+        />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxEms="10"
+        />
+
+        <Button
+                android:id="@+id/tv_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/qzq_title_black"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:text="@string/btn_finish"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_14"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/progress_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/qzq_title_black"
+                android:alpha="0.6"
+        />
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/progress_hud_bg"
+                android:orientation="vertical"
+                android:gravity="center_horizontal" android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp" android:paddingTop="20dp" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+            <ImageView
+                    android:id="@+id/progress_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@anim/spinner"/>
+
+            <TextView
+                    android:id="@+id/progress_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
