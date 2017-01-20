@@ -1,0 +1,36 @@
+package com.xcsd.edu.parent.message;
+
+option java_package = "com.xcsd.rpc.proto";
+option java_outer_classname = "GameProto";
+
+//获取游戏列表
+//URL:/game/list
+message GameListRequest {
+
+}
+
+//获取游戏列表
+message GameListResponse {
+	message Game {
+		required int64 gameId = 1;			//游戏ID
+		optional string gameName = 2;		//游戏名称
+		optional string abilityName = 3;	//能力名称
+		optional int32 levelCount = 4;		//关卡数量
+		optional string picUrl = 5;			//图片URL
+		optional string color = 6;			//颜色值16进制
+	}
+	repeated Game gameList = 1;
+}
+
+//游戏关卡
+message GameLevel {
+	required int64 gameId = 1;
+	required int32 level = 2;
+	optional string gameName = 3;
+	optional string abilityName = 4;
+	optional string picUrl = 5;
+	optional int32 stars = 6;		//作业星级	是否显示决定于作业状态
+	optional string color = 7;
+	optional int32 abilityId = 8;	//能力ID
+	optional bool hasGuide = 9;		//是否有新手引导
+}

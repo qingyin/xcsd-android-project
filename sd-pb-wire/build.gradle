@@ -1,0 +1,86 @@
+//apply plugin: 'com.google.protobuf'
+apply plugin: 'maven'
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_7
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven{
+            url "${nexusUrl}/content/groups/public"
+        }
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.4.2-SNAPSHOT'
+    }
+}
+
+sourceSets {
+    main {
+//        proto {
+//            srcDir 'src/main/resources/proto'
+//            include '**/*.proto'
+//
+//            builtins {
+//                java {
+//                    option "${projectDir}/src/main/java"
+//                }
+//            }
+//        }
+
+        java{
+            srcDir 'src/main/java'
+        }
+    }
+}
+
+repositories {
+    maven{
+        url "${nexusUrl}/content/groups/public"
+    }
+    mavenLocal()
+    mavenCentral()
+}
+
+//protocDep = 'com.google.protobuf:protoc:2.6.1'
+//generatedFileDir = "${projectDir}/src/main/java"
+
+dependencies {
+    //compile 'com.google.protobuf:protobuf-java:2.6.1'
+    compile 'com.squareup.wire:wire-runtime:1.8.0'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "${nexusUrl}/content/repositories/releases") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+            snapshotRepository(url: "${nexusUrl}/content/repositories/snapshots") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+
+            addFilter('sd-pb-wire') {artifact, file ->
+                artifact.name == 'sd-pb-wire'
+            }
+            /*addFilter('tx-pb-card-wire') {artifact, file ->
+                artifact.name == 'tx-pb-card-wire'
+            }*/
+
+            pom('sd-pb-wire').version = '1.0.57-SNAPSHOT'
+            pom('sd-pb-wire').groupId = 'com.xcsd'
+
+            /*pom('tx-pb-card-wire').version = '1.0.2-SNAPSHOT'
+            pom('tx-pb-card-wire').groupId = 'com.tuxing'*/
+        }
+    }
+}
+
+task generateWireFile(type: JavaExec ) {
+    classpath = files("libs/wire-compiler-1.8.0-jar-with-dependencies.jar")
+    args = ["--proto_path=src/main/resources/proto", "--java_out=src/main/java",
+            "Game.proto", "Homework.proto", "LearningAbility.proto","Test.proto","Data.proto"]
+    main = "com.squareup.wire.WireCompiler"
+}

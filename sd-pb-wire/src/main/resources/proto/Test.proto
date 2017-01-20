@@ -1,0 +1,16 @@
+package com.xcsd.edu.parent.message;
+
+import "Game.proto";
+option java_package = "com.xcsd.rpc.proto";
+option java_outer_classname = "TestProto";
+
+message GameTestRequest {
+	required int64 userId = 1;
+}
+
+message GameTestResponse {
+	required int64 testId = 1;
+	required bool isFirstTest = 2;
+	repeated GameLevel gameLevel = 3;
+	optional int64 userId = 4;		//测试人的用户ID
+}

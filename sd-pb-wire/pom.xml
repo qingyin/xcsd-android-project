@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <profiles>
+        <!-- dev -->
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev-</env>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault><!--默认启用的是dev环境配置-->
+            </activation>
+        </profile>
+        <!-- 生产环境 -->
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env>prod-</env>
+            </properties>
+        </profile>
+    </profiles>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xcsd</groupId>
+    <artifactId>sd-pb</artifactId>
+    <version>1.0-${env}SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>sd-pb</finalName>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>compile-protoc</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <tasks>
+                                <mkdir dir="src/main/gen-java" />
+                                <path id="proto.path">
+                                    <fileset dir="src/main/resources/proto">
+                                        <include name="**/*.proto" />
+                                    </fileset>
+                                </path>
+                                <pathconvert pathsep=" " property="proto.files"
+                                             refid="proto.path" />
+                                <exec executable="protoc">
+                                    <arg value="--java_out=src/main/gen-java" />
+                                    <arg value="-I${project.basedir}/src/main/resources/proto" />
+                                    <arg line="${proto.files}" />
+                                </exec>
+                            </tasks>
+                            <sourceRoot>src/main/gen-java</sourceRoot>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>src/main/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>
